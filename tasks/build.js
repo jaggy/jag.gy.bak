@@ -31,6 +31,7 @@ module.exports = {
 
     browserSync: function(proxy) {
         return new BrowserSyncPlugin({
+            open: false,
             notify: false,
             port: port,
             proxy: proxy,
