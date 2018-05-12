@@ -72,6 +72,10 @@ a {
             @apply .mt-0;
         }
     }
+
+    p + p {
+        @apply .mt-2;
+    }
 }
 
 .wipe-enter-active {

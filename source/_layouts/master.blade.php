@@ -13,7 +13,7 @@
     </head>
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
-        <main id="app" class="content" :class="{ 'heartbeat': burger.hovering }">
+        <main id="app" class="content">
             <button type="button"
                     class="hamburger hamburger--elastic [ fixed bg-pink outline-none z-50 ]"
                     style="right: 9px; top: 9px;"

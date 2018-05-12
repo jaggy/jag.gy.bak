@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 section: content
+title:   Uses
 ---
 # Tools
 
