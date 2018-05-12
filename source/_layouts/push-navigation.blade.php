@@ -4,7 +4,7 @@
                 flex items-center justify-center
                 bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10
             ]">
-        <ul class="[ list-reset leading-none -mt-8 ]">
+        <ul class="[ list-reset leading-none -mt-24 ]">
             <li class="[ overflow-hidden ]">
                 <anchor class="[ text-white ]" to="/thoughts/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
@@ -49,18 +49,6 @@
 
                     <span class="[ ms-base sm:ms-lg ]" slot="caption">
                         Editors, terminals, gear, it's here!
-                    </span>
-                </anchor>
-            </li>
-
-            <li class="[ mt-8 ]">
-                <anchor class="[ text-white ]" to="mailto:i.am@jag.gy" :inverse="true">
-                    <span class="[ ms-xl sm:ms-2xl ]" slot="title">
-                        Let's work together!
-                    </span>
-
-                    <span class="[ ms-base sm:ms-lg ]" slot="caption">
-                        Let me know if you want to work with me on something.
                     </span>
                 </anchor>
             </li>
