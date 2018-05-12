@@ -6,4 +6,11 @@ new Vue({
     el: '#app',
 
     data: { burger: false },
+
+    methods: {
+        wipeAfter() {
+            this.$refs.pushNavigation
+                .classList.add('reveal')
+        },
+    },
 })

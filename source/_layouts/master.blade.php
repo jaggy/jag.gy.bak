@@ -24,8 +24,8 @@
                 </span>
             </button>
 
-            <transition name="wipe">
-                <section v-if="burger"
+            <transition name="wipe" @after-enter="wipeAfter">
+                <section v-if="burger" ref="pushNavigation"
                     class="push-navigation [
                             flex items-center
                             bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10
