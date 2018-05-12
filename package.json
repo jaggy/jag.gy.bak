@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "hamburgers": "^0.9.3",
+        "prismjs": "^1.14.0",
         "tailwindcss": "^0.5.3",
         "vue": "^2.5.16"
     }

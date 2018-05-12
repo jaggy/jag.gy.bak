@@ -1,0 +1,87 @@
+:root {
+    --font-monospace: 'inconsolata', 'Menlo', 'Monaco', 'monospace';
+
+    --transparent:  transparent;
+    --white:        #fafafa;
+    --grey:         #5c6873;
+    --black:        #202734;
+    --cyan:         #20a1c5;
+    --orange:       #ff5812;
+    --yellow:       #ffb454;
+    --green:        #c2d94d;
+    --pink:         #ff5c61;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color:       var(--cyan);
+    font-family: var(--font-monospace);
+    font-size:   14px;
+    text-shadow: none;
+    position:    relative;
+
+    background-color: var(--black) !important;
+    margin-top: 1rem;
+
+    overflow: initial;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+}
+
+pre[class*="language-"]:before {
+    position:  absolute;
+    top:       0.8em;
+    right:     1rem;
+    font-size: 0.75rem;
+    color:     rgba(255, 255, 255, 0.4);
+}
+
+pre.language-php:before {
+    content: "php";
+}
+
+.token.number {
+    color: var(--pink);
+}
+
+.token.string {
+    color: var(--green);
+}
+
+.token.operator {
+    background: transparent;
+    color: var(--white);
+}
+
+.token.keyword {
+    color: var(--orange);
+}
+
+.token.symbol {
+    color: var(--yellow);
+}
+
+.token.function {
+    color: var(--white);
+}
+
+.token.variable {
+    color: var(--pink);
+}
+
+.token.property {
+    color: var(--cyan);
+}
+
+.token.class-name {
+    color: var(--yellow);
+}
+
+.token.comment {
+    font-family: 'Operator Mono', 'inconsolata', 'Menlo', 'Monaco', 'monospace';
+    color: var(--grey);
+    font-style: italic;
+}

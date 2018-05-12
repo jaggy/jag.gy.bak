@@ -40,6 +40,8 @@
             <div class="edge right  [ fixed bg-pink w-2 h-screen pin-t pin-r z-50 ]" :class="{ 'w-3': burger.hovering }"></div>
         </main>
 
+        @stack('scripts')
+
         <script src="{{ mix('js/main.js') }}"></script>
         <script>
          (function(d) {

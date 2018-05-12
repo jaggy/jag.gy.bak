@@ -21,4 +21,5 @@ mix
         ],
     })
     .js('source/_assets/js/main.js', 'js')
+    .js('source/_assets/js/thoughts.js', 'js')
     .version();
