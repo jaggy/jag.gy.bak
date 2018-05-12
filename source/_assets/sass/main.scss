@@ -70,7 +70,9 @@ a {
 
 .push-navigation li {
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transform:  translateX(-20px);
+    transition: opacity 0.2s,
+                transform 0.3s ease-in-out;
 }
 
 .push-navigation li:nth-child(1) {
@@ -91,6 +93,7 @@ a {
 
 .push-navigation.reveal li {
     opacity: 1;
+    transform:  translateX(0);
 }
 
 /*
