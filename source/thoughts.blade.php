@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', 'Journal')
+
 @section('body')
     <section class="posts [ py-12 ]">
         <h1 class="[ ms-2xl ]">Journal</h1>
