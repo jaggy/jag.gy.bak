@@ -44,34 +44,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-pre, code {
-    @apply .font-mono;
-
-    font-size: 14px;
-}
-
 h1, h2, h3, h4, h5, h6 {
     @apply .font-display .font-medium .leading-tight;
-}
-
-h1 {
-    @apply .ms-3xl;
-}
-
-h2 {
-    @apply .ms-2xl .mt-6 .mb-4;
-}
-
-h3 {
-    @apply .ms-xl .mt-4 mb-2;
-}
-
-h4 {
-    @apply .ms-lg;
-}
-
-p, blockquote, pre {
-    @apply .mt-2;
 }
 
 a {
