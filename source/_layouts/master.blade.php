@@ -16,7 +16,7 @@
         <main id="app" class="content">
             <button type="button" class="hamburger hamburger--elastic [ absolute bg-pink outline-none z-50 ]"
                     style="right: 12px; top: 12px;"
-                    @click.prevent="togglePushNavigation" :class="{
+                    @click.prevent="burger = ! burger" :class="{
                           '[ is-active ]': burger,
                     }">
                 <span class="hamburger-box">
