@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('body')
-    <section class="home [ py-16 ]">
+    <section class="home [ py-12 ]">
         <h1 class="[ leading-none tracking-semitight ms-2xl ]">
             Kumusta? I'm Jaggy.
         </h1>

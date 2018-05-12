@@ -3,7 +3,7 @@
 @section('title', $page->title)
 
 @section('body')
-    <article class="post [ py-16 ]">
+    <article class="post [ py-12 ]">
         <section class="post-content">
             @yield('content')
         </section>

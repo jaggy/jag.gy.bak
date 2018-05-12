@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="[ ms-base ]" lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,7 @@
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
         <main id="app" class="content">
             <button type="button" class="hamburger hamburger--elastic [ fixed bg-pink outline-none z-50 ]"
-                    style="right: 12px; top: 12px;"
+                    style="right: 9px; top: 9px;"
                     @click.prevent="burger = ! burger" :class="{
                           '[ is-active ]': burger,
                     }">
@@ -30,10 +30,10 @@
                 @yield('body')
             </div>
 
-            <div class="top    [ fixed bg-pink h-3 w-screen pin-t pin-l z-50 ]"></div>
-            <div class="bottom [ fixed bg-pink h-3 w-screen pin-b pin-l z-50 ]"></div>
-            <div class="left   [ fixed bg-pink w-3 h-screen pin-t pin-l z-50 ]"></div>
-            <div class="right  [ fixed bg-pink w-3 h-screen pin-t pin-r z-50 ]"></div>
+            <div class="top    [ fixed bg-pink h-2 w-screen pin-t pin-l z-50 ]"></div>
+            <div class="bottom [ fixed bg-pink h-2 w-screen pin-b pin-l z-50 ]"></div>
+            <div class="left   [ fixed bg-pink w-2 h-screen pin-t pin-l z-50 ]"></div>
+            <div class="right  [ fixed bg-pink w-2 h-screen pin-t pin-r z-50 ]"></div>
         </main>
 
         <script src="{{ mix('js/main.js') }}"></script>
