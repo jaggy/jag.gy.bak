@@ -1,7 +1,7 @@
 <transition name="wipe" @after-enter="wipeAfter">
     <section v-if="burger" ref="pushNavigation"
         class="push-navigation [
-                flex items-center
+                flex items-center justify-center
                 bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10
             ]">
         <ul class="[ list-reset leading-none -mt-24 ]">
@@ -12,7 +12,7 @@
                     </span>
 
                     <span class="[ ms-base sm:ms-lg ]" slot="caption">
-                        Thoughts on anything I want to write on.
+                        Thoughts on code, technology, work, and any other thing I can think of.
                     </span>
                 </anchor>
             </li>
@@ -24,7 +24,7 @@
                     </span>
 
                     <span class="[ ms-base sm:ms-lg ]" slot="caption">
-                        Know more about what I do and my experiences.
+                        Know more about me and the things I've done.
                     </span>
                 </anchor>
             </li>
@@ -36,7 +36,7 @@
                     </span>
 
                     <span class="[ ms-base sm:ms-lg ]" slot="caption">
-                        The tools I’m currently using to do what I do.
+                        Editors, terminals, microphones, it's here!
                     </span>
                 </anchor>
             </li>
@@ -48,7 +48,7 @@
                     </span>
 
                     <span class="[ ms-base sm:ms-lg ]" slot="caption">
-                        If you like how I work, let’s work together!
+                        Let me know if you want to work with me on something.
                     </span>
                 </anchor>
             </li>

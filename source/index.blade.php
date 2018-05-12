@@ -21,47 +21,47 @@
         <nav class="[ mt-10 ]">
             <ul class="[ grid list-reset leading-none grid-gap-28 grid-row-gap-36 ]">
                 <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black max-w-sm ]" to="#">
                         <template slot="title">
                             Journal
                         </template>
 
                         <template slot="caption">
-                            Thoughts on anything I want to write on.
+                            Thoughts on code, technology, work, and any other thing I can think of.
                         </template>
                     </anchor>
                 </li>
                 <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black max-w-sm ]" to="#">
                         <template slot="title">
                             About
                         </template>
 
                         <template slot="caption">
-                            Know more about what I do and my experiences.
+                            Know more about me and the things I've done.
                         </template>
                     </anchor>
                 </li>
 
                 <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black max-w-sm ]" to="#">
                         <template slot="title">
                             Tools
                         </template>
 
                         <template slot="caption">
-                            The tools I’m currently using to do what I do.
+                            Editors, terminals, microphones, it's here!
                         </template>
                     </anchor>
                 </li>
                 <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black max-w-sm ]" to="#">
                         <template slot="title">
                             Let's work together!
                         </template>
 
                         <template slot="caption">
-                            If you like how I work, let’s work together!
+                            Let me know if you want to work with me on something.
                         </template>
                     </anchor>
                 </li>
