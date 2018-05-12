@@ -94,9 +94,14 @@ a {
     transform: translateY(100%);
 }
 
-.edge {
-    transition: height 0.35s,
-                width  0.35s ease-in-out;
+.edge.top,
+.edge.bottom {
+    transition: height 0.35s ease-in-out;
+}
+
+.edge.left,
+.edge.right {
+    transition: width 0.35s ease-in-out;
 }
 
 .push-navigation li {
