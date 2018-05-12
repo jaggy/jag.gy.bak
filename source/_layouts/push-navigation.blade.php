@@ -4,8 +4,20 @@
                 flex items-center justify-center
                 bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10
             ]">
-        <ul class="[ list-reset leading-none -mt-24 ]">
+        <ul class="[ list-reset leading-none -mt-8 ]">
             <li class="[ overflow-hidden ]">
+                <anchor class="[ text-white ]" to="/thoughts/" :inverse="true">
+                    <span class="[ ms-xl sm:ms-2xl ]" slot="title">
+                        Home
+                    </span>
+
+                    <span class="[ ms-base sm:ms-lg italic ]" slot="caption">
+                        Allons-y!
+                    </span>
+                </anchor>
+            </li>
+
+            <li class="[ mt-8 ]">
                 <anchor class="[ text-white ]" to="/thoughts/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         Journal
@@ -17,7 +29,7 @@
                 </anchor>
             </li>
 
-            <li class="[ overflow-hidden mt-8 ]">
+            <li class="[ mt-8 ]">
                 <anchor class="[ text-white ]" to="/about/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         About
@@ -29,7 +41,7 @@
                 </anchor>
             </li>
 
-            <li class="[ overflow-hidden mt-8 ]">
+            <li class="[ mt-8 ]">
                 <anchor class="[ text-white ]" to="/uses/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         Tools
@@ -41,7 +53,7 @@
                 </anchor>
             </li>
 
-            <li class="[ overflow-hidden mt-8 ]">
+            <li class="[ mt-8 ]">
                 <anchor class="[ text-white ]" to="mailto:i.am@jag.gy" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         Let's work together!

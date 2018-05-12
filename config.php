@@ -5,7 +5,9 @@ return [
     'production'  => false,
     'collections' => [
         'posts' => [
-            'path' => 'thoughts',
+            'path' => function ($page) {
+                return 'thoughts/' . preg_replace("/^([\d]+-)/", '', $page->getFilename());
+            },
             'sort' => '-date',
         ],
     ],
