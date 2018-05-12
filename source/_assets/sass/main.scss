@@ -40,8 +40,8 @@
 }
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,6 +50,24 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     @apply .text-pink;
+}
+
+.post {
+    h1 {
+        @apply .ms-2xl;
+    }
+
+    h2 {
+        @apply .ms-xl .mt-4;
+    }
+
+    ul {
+        @apply .mt-2;
+
+        ul {
+            @apply .mt-0;
+        }
+    }
 }
 
 .wipe-enter-active {

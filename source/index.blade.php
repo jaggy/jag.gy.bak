@@ -2,7 +2,7 @@
 
 @section('title', 'Home')
 
-@section('content')
+@section('body')
     <section class="home [ py-16 ]">
         <h1 class="[ leading-none tracking-semitight ms-2xl ]">
             Kumusta? I'm Jaggy.
@@ -44,7 +44,7 @@
                 </li>
 
                 <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black max-w-sm ]" to="#">
+                    <anchor class="[ text-black max-w-sm ]" to="/uses/">
                         <template slot="title">
                             Tools
                         </template>

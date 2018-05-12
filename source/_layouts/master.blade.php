@@ -27,7 +27,7 @@
             @include('_layouts.push-navigation')
 
             <div class="wrapper [ max-w-md px-8 mx-auto ]">
-                @yield('content')
+                @yield('body')
             </div>
 
             <div class="top    [ fixed bg-pink h-3 w-screen pin-t pin-l z-50 ]"></div>
