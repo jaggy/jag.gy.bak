@@ -844,6 +844,7 @@ module.exports = {
       // padding: '1rem',
     }),
     require('tailwindcss-modularscale')({
+      variants: ['responsive'],
       base:  18,
       ratio: 1.414, // Perfect Fourth
     })
