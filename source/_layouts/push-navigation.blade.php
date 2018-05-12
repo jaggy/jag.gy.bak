@@ -6,7 +6,7 @@
             ]">
         <ul class="[ list-reset leading-none -mt-24 ]">
             <li class="[ overflow-hidden ]">
-                <anchor class="[ text-white ]" to="#" :inverse="true">
+                <anchor class="[ text-white ]" to="/thoughts/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         Journal
                     </span>

@@ -25,10 +25,9 @@ In between most of these are usually freelancing on small scale web design proje
 - [Compose](https://compose.fm) is a platform for collaboration between composers. _Github for writing_.
 - [Type](https://github.com/artisanstudio/type) is a boilerplate for building Wordpress sites that uses Laravel for everything _besides_ the CMS.
 - Recreating popular social media sites to use as a reference when I'm doing my mentorships. Here's a couple of ones:
-    - Slack
-    - Instagram
-    - Facebook
-    - Twitter
+    - [Slack](https://github.com/artisanstudio/slack)
+    - [Instagram](https://github.com/jaggy/instagram)
+    - [Facebook](https://github.com/jaggy/facebook)
 
 ## Besides Career Stuff
 If you made it all the way down here, well:

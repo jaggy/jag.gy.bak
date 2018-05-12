@@ -1,7 +1,12 @@
 <?php
 
 return [
-    'baseUrl' => '',
-    'production' => false,
-    'collections' => [],
+    'baseUrl'     => '',
+    'production'  => false,
+    'collections' => [
+        'posts' => [
+            'path' => 'thoughts',
+            'sort' => '-date',
+        ],
+    ],
 ];

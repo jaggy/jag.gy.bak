@@ -25,7 +25,7 @@
         <nav class="[ mt-8 ]">
             <ul class="[ list-reset leading-none ]">
                 <li class="[ overflow-hidden ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black ]" to="/thoughts/">
                         <template slot="title">
                             Journal
                         </template>
