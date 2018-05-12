@@ -6,4 +6,10 @@ new Vue({
     el: '#app',
 
     data: { burger: false },
+
+    methods: {
+        togglePushNavigation() {
+            this.burger = ! this.burger
+        },
+    },
 })

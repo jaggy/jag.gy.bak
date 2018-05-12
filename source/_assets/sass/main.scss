@@ -52,6 +52,21 @@ a {
     @apply .text-pink;
 }
 
+.wipe-enter-active {
+    transition: transform 0.35s ease-out;
+}
+.wipe-leave-active {
+    transition: transform 0.35s ease-in;
+}
+
+.wipe-enter {
+    transform: translateY(-100%);
+}
+
+.wipe-leave-to {
+    transform: translateY(100%);
+}
+
 /*
 |-----------------------------------------------------------------------------
 | Hamburgers                                    https://jonsuh.com/hamburgers/

@@ -14,15 +14,23 @@
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
         <main id="app" class="content">
-            <button type="button"
-                    class="hamburger hamburger--elastic [ absolute bg-pink outline-none ]"
+            <button type="button" class="hamburger hamburger--elastic [ absolute bg-pink outline-none z-50 ]"
                     style="right: 12px; top: 12px;"
-                    @click.prevent="burger = ! burger"
-                    :class="{ 'is-active': burger }">
+                    @click.prevent="togglePushNavigation" :class="{
+                          '[ is-active ]': burger,
+                    }">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
+
+            <transition name="wipe">
+                <section class="push-navigation [
+                            bg-pink h-screen w-screen
+                            pin-t pin-l fixed z-40
+                        ]" v-if="burger">
+                </section>
+            </transition>
 
             <div class="wrapper [ max-w-md px-8 mx-auto ]">
                 @yield('content')
