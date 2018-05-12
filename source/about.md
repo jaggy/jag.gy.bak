@@ -5,8 +5,7 @@ title:   About
 ---
 
 # About
-
-Hi there, I'm Jaggy! I'm a designer that loves writing, typography, design, and code too.
+Hi there, I'm Jaggy! I'm a designer that loves writing, typography, UX, and code too.
 
 I usually work with Laravel projects. I prefer building front-end things in Vanilla JS, Vue.js and sometimes React (_It really just depends_).
 
@@ -32,7 +31,6 @@ In between most of these are usually freelancing on small scale web design proje
     - Twitter
 
 ## Besides Career Stuff
-
 If you made it all the way down here, well:
 - I study music. I sometimes perform at _really_ small bars if there's no one else more talented is up for the night.
 - I _was_ a magician at one point.
