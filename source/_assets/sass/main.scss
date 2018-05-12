@@ -78,6 +78,22 @@ a {
     @apply .text-pink;
 }
 
+.home nav a strong {
+    @apply .relative;
+}
+
+.home nav a strong:after {
+    content: '';
+    height: 22px;
+    width: 110%;
+    z-index: -1;
+    top: 7px;
+    left: 4px;
+
+    @apply .block .absolute;
+    @apply .bg-pink opacity-25;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

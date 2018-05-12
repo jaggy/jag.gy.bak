@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="[ border-8 border-pink h-screen z-50 ]" lang="en">
+<html class="[ border-8 border-pink h-screen ]" lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
     </head>
 
-    <body class="[ ms-base font-serif font-light leading-normal tracking-normal ]">
+    <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
         <main class="content">
             <div class="wrapper [ max-w-md px-8 mx-auto ]">
                 @yield('content')
