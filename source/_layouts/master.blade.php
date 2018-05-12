@@ -9,9 +9,8 @@
     </head>
 
     <body class="[ ms-base font-serif font-light leading-normal tracking-normal ]">
-
         <main class="content">
-            <div class="wrapper [ max-w-md px-4 mx-auto ]">
+            <div class="wrapper [ max-w-md px-8 mx-auto ]">
                 @yield('content')
             </div>
         </main>

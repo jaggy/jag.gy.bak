@@ -51,7 +51,7 @@ pre, code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply .font-display .leading-tight;
+    @apply .font-display .font-medium .leading-tight;
 }
 
 h1 {
@@ -72,6 +72,10 @@ h4 {
 
 p, blockquote, pre {
     @apply .mt-2;
+}
+
+a {
+    @apply .text-pink;
 }
 
 /**
@@ -98,3 +102,22 @@ p, blockquote, pre {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+@responsive {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .grid-gap-28 {
+        grid-row-gap:    28px;
+        grid-column-gap: 28px;
+    }
+
+    .grid-row-gap-36 {
+        grid-row-gap: 36px;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-6  { grid-column: span 6; }
+}
