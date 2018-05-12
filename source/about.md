@@ -8,7 +8,9 @@ title:   About
 
 Hi there, I'm Jaggy! I'm a designer that loves writing, typography, design, and code too.
 
-I'm mostly code in PHP, and Laravel is my framework of choice. I prefer building front-end things in Vanilla JS, Vue.js and sometimes React (_It really just depends_).
+I usually work with Laravel projects. I prefer building front-end things in Vanilla JS, Vue.js and sometimes React (_It really just depends_).
+
+These days though, I mostly do UX, web design, and consulting on usability. I'm still not _amazing_ at it but I'm working on it.
 
 ## Experience
 In between most of these are usually freelancing on small scale web design projects and security auditing.
