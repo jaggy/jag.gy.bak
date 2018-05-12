@@ -25,9 +25,11 @@
             </button>
 
             <transition name="wipe">
-                <section
-                    v-if="burger"
-                    class="push-navigation [ bg-pink h-screen w-screen pin-t pin-l fixed z-40 p-16 ]">
+                <section v-if="burger"
+                    class="push-navigation [
+                            flex items-center
+                            bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10
+                        ]">
                     <ul class="[ list-reset leading-none ]">
                         <li class="[ overflow-hidden ]">
                             <anchor class="[ text-white ]" to="#" :inverse="true">
