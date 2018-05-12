@@ -4,8 +4,6 @@ section: content
 ---
 # Tools
 
-I took the idea from [Wesbos' post](https://wesbos.com/uses/).
-
 I want to write mine down too to keep track of how often I switch my toolchain.
 
 ## Editor

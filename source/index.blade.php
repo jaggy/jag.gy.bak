@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('body')
-    <section class="home [ py-12 ]">
+    <section class="home [ pt-12 pb-8 ]">
         <h1 class="[ leading-none tracking-semitight ms-2xl ]">
             Kumusta? I'm Jaggy.
         </h1>
@@ -80,4 +80,15 @@
             </ul>
         </nav>
     </section>
+
+    <footer style="font-size: 16px;">
+        My references in building this site:
+
+        <ul>
+            <li><a href="http://ueno.co/">ueno.</a> for the link hovers.</li>
+            <li><a href="https://www.pablostanley.com/">Pablo Stanley</a> for a introduction copy.</li>
+            <li><a href="https://www.thelonelypixel.co.uk/">The Lonely Pixel</a> inspired the navigation.</li>
+            <li><a href="http://wesbos.com/uses/">Wesbos</a> the tools page.</li>
+        </ul>
+    </footer>
 @endsection
