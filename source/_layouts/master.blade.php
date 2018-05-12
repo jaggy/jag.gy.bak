@@ -9,13 +9,13 @@
     </head>
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
-        <main class="content">
-            <div class="wrapper [ max-w-lg px-8 mx-auto ]">
+        <main id="app" class="content">
+            <div class="wrapper [ max-w-md px-8 mx-auto ]">
                 @yield('content')
             </div>
         </main>
 
-        <div class="[ fixed h-screen w-screen pin-t pin-l border-8 border-pink ]">
+        <div class="[ fixed h-screen w-screen pin-t pin-l border-8 border-pink z-negative ]">
         </div>
 
         <script src="{{ mix('js/main.js') }}"></script>
