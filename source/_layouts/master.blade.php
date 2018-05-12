@@ -15,8 +15,10 @@
             </div>
         </main>
 
-        <div class="[ fixed h-screen w-screen pin-t pin-l border-8 border-pink z-negative ]">
-        </div>
+        <div class="top    [ fixed bg-pink h-3 w-screen pin-t pin-l z-50 ]"></div>
+        <div class="bottom [ fixed bg-pink h-3 w-screen pin-b pin-l z-50 ]"></div>
+        <div class="left   [ fixed bg-pink w-3 h-screen pin-t pin-l z-50 ]"></div>
+        <div class="right  [ fixed bg-pink w-3 h-screen pin-t pin-r z-50 ]"></div>
 
         <script src="{{ mix('js/main.js') }}"></script>
         <script>
