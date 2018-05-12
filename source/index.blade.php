@@ -18,50 +18,62 @@
             Welcome to the place where I’m trying to improve my writing.
         </p>
 
-        <nav class="[ mt-10 ]">
-            <ul class="[ grid list-reset leading-none grid-gap-28 grid-row-gap-36 ]">
-                <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black max-w-sm ]" to="#">
+        <p class="mt-2">
+            Feel free to reach out at <a href="https://twitter.com/jaggygauran">Twitter</a> / <a href="https://github.com/jaggy">Github</a> / <a href="mailto:i.am@jag.gy">i.am@jag.gy</a> <span class="[ ml-1 ]">🎉</span>
+        </p>
+
+        <nav class="[ mt-8 ]">
+            <ul class="[ list-reset leading-none ]">
+                <li class="[ overflow-hidden ]">
+                    <anchor class="[ text-black ]" to="#">
                         <template slot="title">
                             Journal
                         </template>
 
                         <template slot="caption">
-                            Thoughts on code, technology, work, and any other thing I can think of.
+                            <span class="block max-w-xs">
+                                Thoughts on code, technology, work, and any other thing I can think of.
+                            </span>
                         </template>
                     </anchor>
                 </li>
-                <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black max-w-sm ]" to="#">
+                <li class="[ overflow-hidden mt-6 ]">
+                    <anchor class="[ text-black ]" to="#">
                         <template slot="title">
                             About
                         </template>
 
                         <template slot="caption">
-                            Know more about me and the things I've done.
+                            <span class="block max-w-xs">
+                                Know more about me and the things I've done.
+                            </span>
                         </template>
                     </anchor>
                 </li>
 
-                <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black max-w-sm ]" to="/uses/">
+                <li class="[ overflow-hidden mt-6 ]">
+                    <anchor class="[ text-black ]" to="/uses/">
                         <template slot="title">
                             Tools
                         </template>
 
                         <template slot="caption">
-                            Editors, terminals, microphones, it's here!
+                            <span class="block max-w-xs">
+                                Editors, terminals, gear, it's here!
+                            </span>
                         </template>
                     </anchor>
                 </li>
-                <li class="[ col-12 sm:col-6 overflow-hidden ]">
-                    <anchor class="[ text-black max-w-sm ]" to="#">
+                <li class="[ overflow-hidden mt-6 ]">
+                    <anchor class="[ text-black ]" to="mailto:i.am@jag.gy">
                         <template slot="title">
                             Let's work together!
                         </template>
 
                         <template slot="caption">
-                            Let me know if you want to work with me on something.
+                            <span class="block max-w-xs">
+                                Let me know if you want to work with me on a design or a project.
+                            </span>
                         </template>
                     </anchor>
                 </li>

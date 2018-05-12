@@ -39,9 +39,13 @@
     box-sizing: border-box;
 }
 
+.font-smoothing {
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 * {
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
+    @apply .font-smoothing;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,7 +103,6 @@ a {
 }
 
 .push-navigation li:nth-child(1) {
-    // transition-delay: 0.1s;
 }
 
 .push-navigation li:nth-child(2) {
@@ -175,23 +178,4 @@ $hamburger-types:               ( elastic );
 
 .outline-none:focus {
     outline: none;
-}
-
-@responsive {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    .grid-gap-28 {
-        grid-row-gap:    28px;
-        grid-column-gap: 28px;
-    }
-
-    .grid-row-gap-36 {
-        grid-row-gap: 36px;
-    }
-
-    .col-12 { grid-column: span 12; }
-    .col-6  { grid-column: span 6; }
 }

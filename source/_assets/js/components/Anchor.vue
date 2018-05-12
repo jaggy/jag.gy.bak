@@ -1,17 +1,17 @@
 <template>
 <a :href="to" class="[ no-underline block ]"
    @mouseenter="isActive = true" @mouseleave="isActive = false">
-    <strong class="[ ms-lg font-display font-medium relative overflow-hidden inline-block pr-4 ]">
+    <strong class="[ ms-lg font-display font-medium relative overflow-hidden inline-block pr-4 pb-1 ]">
         <slot name="title"></slot>
 
         <transition name="slide">
-            <span class="highlight [ opacity-25 ]" v-if="isActive"
+            <span class="highlight [ opacity-40 ]" v-if="isActive"
                 :class="{ 'bg-pink': ! inverse, 'bg-white': inverse }">
             </span>
         </transition>
     </strong>
 
-    <p class="[ italic leading-tight mt-0 ]">
+    <p class="[ leading-tight -mt-1 max-w-sm ]">
         <slot name="caption"></slot>
     </p>
 </a>
