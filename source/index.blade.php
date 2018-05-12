@@ -85,7 +85,7 @@
 
             <ul>
                 <li><a rel="noopener noreferrer" target="_blank" href="http://ueno.co/">ueno.</a> for the link hovers.</li>
-                <li><a rel="noopener noreferrer" target="_blank" href="https://www.pablostanley.com/">Pablo Stanley</a> for a introduction copy.</li>
+                <li><a rel="noopener noreferrer" target="_blank" href="https://www.pablostanley.com/">Pablo Stanley</a> for the introduction copy.</li>
                 <li><a rel="noopener noreferrer" target="_blank" href="https://www.thelonelypixel.co.uk/">The Lonely Pixel</a> inspired the navigation.</li>
                 <li><a rel="noopener noreferrer" target="_blank" href="http://wesbos.com/uses/">Wesbos</a> the tools page.</li>
             </ul>
