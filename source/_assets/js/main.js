@@ -4,4 +4,6 @@ Vue.component('anchor', require('./components/Anchor'))
 
 new Vue({
     el: '#app',
+
+    data: { burger: false },
 })

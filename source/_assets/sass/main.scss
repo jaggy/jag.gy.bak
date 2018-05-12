@@ -52,6 +52,28 @@ a {
     @apply .text-pink;
 }
 
+/*
+|-----------------------------------------------------------------------------
+| Hamburgers                                    https://jonsuh.com/hamburgers/
+|-----------------------------------------------------------------------------
+|
+| This is the "hamburgers" in our package.json file.
+|
+*/
+
+$hamburger-padding-x:           12px;
+$hamburger-padding-y:           10px;
+$hamburger-layer-width:         18px;
+$hamburger-layer-height:        2px;
+$hamburger-layer-spacing:       4px;
+$hamburger-layer-color:         #fff;
+$hamburger-layer-border-radius: 4px;
+$hamburger-hover-opacity:       1;
+$hamburger-types:               ( elastic );
+
+@import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+@import '../../../node_modules/hamburgers/_sass/hamburgers/base';
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -72,10 +94,13 @@ a {
  * .skew-45 { ... }
  *
  * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
+ * * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.outline-none:focus {
+    outline: none;
+}
 
 @responsive {
     .grid {

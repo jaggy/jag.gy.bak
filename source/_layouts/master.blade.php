@@ -14,15 +14,25 @@
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
         <main id="app" class="content">
+            <button type="button"
+                    class="hamburger hamburger--elastic [ absolute bg-pink outline-none ]"
+                    style="right: 12px; top: 12px;"
+                    @click.prevent="burger = ! burger"
+                    :class="{ 'is-active': burger }">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
             <div class="wrapper [ max-w-md px-8 mx-auto ]">
                 @yield('content')
             </div>
-        </main>
 
-        <div class="top    [ fixed bg-pink h-3 w-screen pin-t pin-l z-50 ]"></div>
-        <div class="bottom [ fixed bg-pink h-3 w-screen pin-b pin-l z-50 ]"></div>
-        <div class="left   [ fixed bg-pink w-3 h-screen pin-t pin-l z-50 ]"></div>
-        <div class="right  [ fixed bg-pink w-3 h-screen pin-t pin-r z-50 ]"></div>
+            <div class="top    [ fixed bg-pink h-3 w-screen pin-t pin-l z-50 ]"></div>
+            <div class="bottom [ fixed bg-pink h-3 w-screen pin-b pin-l z-50 ]"></div>
+            <div class="left   [ fixed bg-pink w-3 h-screen pin-t pin-l z-50 ]"></div>
+            <div class="right  [ fixed bg-pink w-3 h-screen pin-t pin-r z-50 ]"></div>
+        </main>
 
         <script src="{{ mix('js/main.js') }}"></script>
         <script>
