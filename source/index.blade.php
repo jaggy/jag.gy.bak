@@ -38,7 +38,7 @@
                     </anchor>
                 </li>
                 <li class="[ overflow-hidden mt-6 ]">
-                    <anchor class="[ text-black ]" to="#">
+                    <anchor class="[ text-black ]" to="/about/">
                         <template slot="title">
                             About
                         </template>

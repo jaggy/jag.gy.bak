@@ -18,7 +18,7 @@
             </li>
 
             <li class="[ overflow-hidden mt-8 ]">
-                <anchor class="[ text-white ]" to="#" :inverse="true">
+                <anchor class="[ text-white ]" to="/about/" :inverse="true">
                     <span class="[ ms-xl sm:ms-2xl ]" slot="title">
                         About
                     </span>
