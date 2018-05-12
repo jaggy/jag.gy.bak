@@ -5,12 +5,16 @@ Vue.component('anchor', require('./components/Anchor'))
 new Vue({
     el: '#app',
 
-    data: { burger: false },
+    data: {
+        burger: {
+            active:   false,
+            hovering: false,
+        },
+    },
 
     methods: {
         wipeAfter() {
-            this.$refs.pushNavigation
-                .classList.add('reveal')
+            this.$refs.pushNavigation.classList.add('reveal')
         },
     },
 })

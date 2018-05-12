@@ -9,7 +9,7 @@
         </h1>
 
         <p class="[ mt-4 ]">
-            I’m a product designer from Manila. I’m a developer for <a class="[ font-bold ]" href="https://artisan.studio/">Artisan Studio</a>. I
+            I’m a product designer from Manila. I’m a developer for <a class="[ font-bold ]" target="_blank" href="https://artisan.studio/">Artisan Studio</a>. I
             host a “soft skills” Filipino podcast with a couple of my friends, and <em>I
             really love building things</em>.
         </p>

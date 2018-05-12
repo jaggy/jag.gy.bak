@@ -1,5 +1,5 @@
 <transition name="wipe" @after-enter="wipeAfter">
-    <section v-if="burger" ref="pushNavigation"
+    <section v-if="burger.active" ref="pushNavigation"
         class="push-navigation [
                 flex items-center justify-center
                 bg-pink h-screen w-screen pin-t pin-l fixed z-40 px-10

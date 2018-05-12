@@ -13,11 +13,15 @@
     </head>
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
-        <main id="app" class="content">
-            <button type="button" class="hamburger hamburger--elastic [ fixed bg-pink outline-none z-50 ]"
+        <main id="app" class="content" :class="{ 'heartbeat': burger.hovering }">
+            <button type="button"
+                    class="hamburger hamburger--elastic [ fixed bg-pink outline-none z-50 ]"
                     style="right: 9px; top: 9px;"
-                    @click.prevent="burger = ! burger" :class="{
-                          '[ is-active ]': burger,
+                    @click.prevent="burger.active = ! burger.active"
+                    @mouseenter="burger.hovering = true"
+                    @mouseleave="burger.hovering = false"
+                    :class="{
+                          '[ is-active ]': burger.active,
                     }">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -30,10 +34,10 @@
                 @yield('body')
             </div>
 
-            <div class="top    [ fixed bg-pink h-2 w-screen pin-t pin-l z-50 ]"></div>
-            <div class="bottom [ fixed bg-pink h-2 w-screen pin-b pin-l z-50 ]"></div>
-            <div class="left   [ fixed bg-pink w-2 h-screen pin-t pin-l z-50 ]"></div>
-            <div class="right  [ fixed bg-pink w-2 h-screen pin-t pin-r z-50 ]"></div>
+            <div class="edge top    [ fixed bg-pink h-2 w-screen pin-t pin-l z-50 ]" :class="{ 'h-3': burger.hovering }"></div>
+            <div class="edge bottom [ fixed bg-pink h-2 w-screen pin-b pin-l z-50 ]" :class="{ 'h-3': burger.hovering }"></div>
+            <div class="edge left   [ fixed bg-pink w-2 h-screen pin-t pin-l z-50 ]" :class="{ 'w-3': burger.hovering }"></div>
+            <div class="edge right  [ fixed bg-pink w-2 h-screen pin-t pin-r z-50 ]" :class="{ 'w-3': burger.hovering }"></div>
         </main>
 
         <script src="{{ mix('js/main.js') }}"></script>

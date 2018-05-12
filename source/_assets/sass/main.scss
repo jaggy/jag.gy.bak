@@ -86,6 +86,11 @@ a {
     transform: translateY(100%);
 }
 
+.edge {
+    transition: height 0.35s,
+                width  0.35s ease-in-out;
+}
+
 .push-navigation li {
     opacity: 0;
     transform:  translateX(-20px);
@@ -135,6 +140,14 @@ $hamburger-types:               ( elastic );
 
 @import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 @import '../../../node_modules/hamburgers/_sass/hamburgers/base';
+
+.hamburger {
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger:hover {
+    transform: translate(-2px, 2px);
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
