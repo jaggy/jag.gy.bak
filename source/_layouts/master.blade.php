@@ -10,7 +10,7 @@
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
         <main class="content">
-            <div class="wrapper [ max-w-md px-8 mx-auto ]">
+            <div class="wrapper [ max-w-lg px-8 mx-auto ]">
                 @yield('content')
             </div>
         </main>
