@@ -2,7 +2,11 @@
 
 @section('title', $page->title)
 
-@push('scripts')
+@push('head')
+    <link href="{{ mix('css/prism.css') }}" rel="stylesheet">
+@endpush
+
+@push('foot')
     <script src="{{ mix('js/thoughts.js') }}"></script>
 @endpush
 

@@ -10,6 +10,7 @@
         </title>
 
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
+        @stack('head')
     </head>
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
@@ -42,9 +43,13 @@
             </div>
         </main>
 
-        @stack('scripts')
+        <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/vendor.js') }}"></script>
+
+        @stack('foot')
 
         <script src="{{ mix('js/main.js') }}"></script>
+
         <script>
          (function(d) {
              var config = {
