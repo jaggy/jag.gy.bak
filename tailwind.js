@@ -323,6 +323,8 @@ module.exports = {
     '2': '2px',
     '4': '4px',
     '8': '8px',
+    '9': '9px',
+    '16': '16px',
   },
 
 
@@ -455,7 +457,10 @@ module.exports = {
     '48': '12rem',
     '64': '16rem',
     'full': '100%',
-    'screen': '100vh'
+    'screen': '100vh',
+
+    '9px':  '9px',
+    '16px': '16px',
   },
 
 

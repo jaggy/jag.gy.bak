@@ -30,14 +30,16 @@
 
             @include('_layouts.push-navigation')
 
-            <div class="wrapper [ max-w-md px-8 mx-auto ]">
+            <div class="body wrapper [ max-w-md px-8 mx-auto ]" :class="{ 'scale-down': burger.hovering }">
                 @yield('body')
             </div>
 
-            <div class="edge top    [ fixed bg-pink h-2 w-screen pin-t pin-l z-50 ]" :class="{ 'h-3': burger.hovering }"></div>
-            <div class="edge bottom [ fixed bg-pink h-2 w-screen pin-b pin-l z-50 ]" :class="{ 'h-3': burger.hovering }"></div>
-            <div class="edge left   [ fixed bg-pink w-2 h-screen pin-t pin-l z-50 ]" :class="{ 'w-3': burger.hovering }"></div>
-            <div class="edge right  [ fixed bg-pink w-2 h-screen pin-t pin-r z-50 ]" :class="{ 'w-3': burger.hovering }"></div>
+            <div class="edge        [ border-9 border-pink fixed h-screen w-screen pin-l pin-t ]" :class="{ 'border-16': burger.hovering }"></div>
+            <div class="edge-top    [ bg-pink h-9px fixed w-screen pin-l pin-t z-50 ]" :class="{ 'h-16px': burger.hovering }"></div>
+            <div class="edge-bottom [ bg-pink h-9px fixed w-screen pin-l pin-b z-50 ]" :class="{ 'h-16px': burger.hovering }"></div>
+
+            <div class="overlay [ fixed pin-t pin-l h-screen w-screen opacity-0 ]" :class="{ '[ opacity-100 ]': burger.hovering }">
+            </div>
         </main>
 
         @stack('scripts')

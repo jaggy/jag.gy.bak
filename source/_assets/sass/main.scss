@@ -93,7 +93,7 @@ a {
 }
 
 .wipe-leave-active {
-    transition: transform 0.35s ease-in;
+    transition: transform 0.25s ease-in;
 }
 
 .wipe-enter {
@@ -105,14 +105,30 @@ a {
     transform: translateY(100%);
 }
 
-.edge.top,
-.edge.bottom {
-    transition: height 0.35s ease-in-out;
+.edge {
+    z-index: -1;
+    transition: border-width 0.35s ease-in-out;
 }
 
-.edge.left,
-.edge.right {
-    transition: width 0.35s ease-in-out;
+.overlay {
+    z-index: -2;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.75);
+    transition: opacity 350ms ease-in-out;
+}
+
+.body {
+    transition: transform 0.35s ease-in-out;
+    transition-delay: 0.05s;
+    transform-origin: center;
+}
+
+.scale-down {
+    transform: scale(0.99);
+}
+
+.edge-top,
+.edge-bottom {
+    transition: height 0.35s ease-in-out;
 }
 
 .push-navigation li {
@@ -141,7 +157,7 @@ a {
     }
 
     .push-navigation.leaving li:nth-child(#{$child}) {
-        transition-delay: $i * 0.075s;
+        transition-delay: $i * 0.05s;
     }
 }
 
