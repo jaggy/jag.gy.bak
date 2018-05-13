@@ -15,6 +15,7 @@ mix.webpackConfig({
 });
 
 mix
+    .copyDirectory('source/_assets/images', 'source/assets/images')
     .sass('source/_assets/sass/main.scss', 'css')
     .options({
         processCssUrls: false,

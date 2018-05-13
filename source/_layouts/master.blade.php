@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
         @stack('head')
+        <meta property="og:image" content="/assets/images/me.jpg">
     </head>
 
     <body class="[ ms-base font-serif font-light text-black leading-normal tracking-normal ]">
