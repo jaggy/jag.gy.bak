@@ -17,7 +17,7 @@
             <button type="button"
                     class="hamburger hamburger--elastic [ fixed bg-pink outline-none z-50 ]"
                     style="right: 9px; top: 9px;"
-                    @click.prevent="burger.active = ! burger.active"
+                    @click.prevent="burger.active = ! burger.active; burger.hovering = false;"
                     @mouseenter="burger.hovering = true"
                     @mouseleave="burger.hovering = false"
                     :class="{

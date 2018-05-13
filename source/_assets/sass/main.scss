@@ -191,6 +191,10 @@ $hamburger-types:               ( elastic );
     transform: translate(-2px, 2px);
 }
 
+.hamburger:focus {
+    transform: translate(0);
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
