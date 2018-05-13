@@ -30,8 +30,8 @@ export default {
 <style>
 .highlight {
     position: absolute;
-    top:      8px;
-    left:     6px;
+    top:      24%;
+    left:     0;
     z-index:  -1;
 
     width:    110%;
