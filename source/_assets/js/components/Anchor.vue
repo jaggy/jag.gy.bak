@@ -11,7 +11,7 @@
         </transition>
     </strong>
 
-    <p class="[ leading-tight sm:-mt-2 max-w-sm ]">
+    <p class="[ leading-tight sm:-mt-1 max-w-sm ]">
         <slot name="caption"></slot>
     </p>
 </a>
