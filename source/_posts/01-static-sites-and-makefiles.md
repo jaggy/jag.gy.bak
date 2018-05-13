@@ -3,7 +3,8 @@ extends: _layouts.post
 section: content
 date:    2018-05-13
 title:   Static Sites and Makefiles
-excerpt: I still love using Makefiles for small projects. It feels more intuitive than shell scripts.
+excerpt: Let me show you how I use Makefiles to deploy my Jigsaw and VuePress sites.
+holler:  Let's take a look!
 ---
 Recently I've started using [Jigsaw ](http://jigsaw.tighten.co/) and [VuePress](http://vuepress.vuejs.org/) on some personal projects.
 

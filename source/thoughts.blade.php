@@ -24,7 +24,7 @@
                     <anchor to="{{ $post->getUrl() }}">
                         <template slot="title">
                             <span class="[ text-16 font-serif font-bold ]">
-                                Read More
+                                {{ $post->holler ?: 'Read More' }}
                             </span>
                         </template>
                     </anchor>
