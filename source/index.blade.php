@@ -19,7 +19,7 @@
 
         <p class="[ mt-4 ]">
             I’m a product designer from Manila. I’m a developer for <a class="[ font-bold ]" target="_blank" href="https://artisan.studio/">Artisan Studio</a>. I
-            host a “soft skills” Filipino podcast with a couple of my friends, and <em>I
+            host a podcast in Tagalog with a couple of my friends, and <em>I
             really love building things</em>.
         </p>
 
@@ -29,8 +29,8 @@
 
         <p class="mt-2">
             Feel free to reach out at
-            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/jaggygauran">Twitter</a> /
-            <a rel="noopener noreferrer" target="_blank" href="https://github.com/jaggy">Github</a> /
+            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/jaggygauran">Twitter</a>,
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/jaggy">Github</a>, or at
             <a rel="noopener noreferrer" href="mailto:i.am@jag.gy">i.am@jag.gy</a> <span class="[ ml-1 ]">🎉</span>
         </p>
 
@@ -84,7 +84,7 @@
 
                         <template slot="caption">
                             <span class="block max-w-xs">
-                                Let me know if you want to work with me on a design or a project.
+                                Let me know if you want to work with me on a design or some code.
                             </span>
                         </template>
                     </anchor>
@@ -93,7 +93,7 @@
         </nav>
 
         <footer class="[ mt-8 text-16 ]">
-            My references in building this site:
+            My references for building this site:
 
             <ul>
                 <li><a rel="noopener noreferrer" target="_blank" href="http://ueno.co/">ueno.</a> for the link hovers.</li>
