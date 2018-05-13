@@ -10,7 +10,7 @@
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
 
     <meta property="og:description" content="{{ $page->excerpt }}">
-    <meta property="description" content="{{ $page->excerpt }}">
+    <meta name="description" content="{{ $page->excerpt }}">
 @endpush
 
 @push('foot')

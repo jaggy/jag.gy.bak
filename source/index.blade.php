@@ -6,7 +6,7 @@
 <meta property="og:url" content="{{ $page->getUrl() }}"/>
 
 <meta property="og:description" content="I'm a product designer from Manila.">
-<meta property="description" content="I'm a product designer from Manila.">
+<meta name="description" content="I'm a product designer from Manila.">
 @endpush
 
 @section('title', 'Home')
