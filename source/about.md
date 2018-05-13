@@ -3,8 +3,6 @@ extends: _layouts.post
 section: content
 title:   About
 ---
-
-# About
 Hi there, I'm Jaggy! I'm a designer that loves writing, typography, UX, and code too.
 
 I usually work with Laravel projects. I prefer building front-end things in Vanilla JS, Vue.js and sometimes React (_It really just depends_).

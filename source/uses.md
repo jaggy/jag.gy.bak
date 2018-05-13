@@ -3,8 +3,6 @@ extends: _layouts.post
 section: content
 title:   Uses
 ---
-# Tools
-
 I want to write mine down too to keep track of how often I switch my toolchain.
 
 ## Editor

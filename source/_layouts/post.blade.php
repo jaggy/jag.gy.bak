@@ -8,6 +8,15 @@
 
 @section('body')
     <article class="post [ py-12 ]">
+        <header class="post-header [ mb-4 ]">
+            <h1 class="[ ms-2xl ]">{{ $page->title }}</h1>
+            @if($page->date)
+                <span class="post-date [ text-16 ]">
+                    {{ date('F d, Y', $page->date) }}
+                </span>
+            @endif
+        </header>
+
         <section class="post-content">
             @yield('content')
         </section>

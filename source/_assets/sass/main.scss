@@ -62,7 +62,7 @@ a {
     }
 
     h2 {
-        @apply .ms-xl .mt-4;
+        @apply .ms-xl .mt-6 .mb-2;
     }
 
     ul {
@@ -73,13 +73,23 @@ a {
         }
     }
 
+    pre + p,
+    p + pre,
     p + p {
-        @apply .mt-2;
+        @apply .mt-3;
+    }
+
+    code:not([class*="language-"]) {
+        font-size:   14px;
+        background-color: #f0f1f1;
+        color: #202734;
+        font-family: 'inconsolata', 'Menlo', 'Monaco', 'monospace';
+        padding: 2px 5px;
     }
 }
 
 .wipe-enter-active {
-    transition: transform 0.35s ease-out;
+    transition: transform 0.25s ease-out;
 }
 
 .wipe-leave-active {
