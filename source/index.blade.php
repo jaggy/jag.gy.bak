@@ -1,5 +1,14 @@
 @extends('_layouts.master')
 
+@push('head')
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Home | Jaggy"/>
+<meta property="og:url" content="{{ $page->getUrl() }}"/>
+
+<meta property="og:description" content="I'm a product designer from Manila.">
+<meta property="description" content="I'm a product designer from Manila.">
+@endpush
+
 @section('title', 'Home')
 
 @section('body')

@@ -2,6 +2,7 @@
 extends: _layouts.post
 section: content
 title:   About
+excerpt: Hi there, I'm Jaggy! I'm a designer that loves writing, typography, UX, and code too.
 ---
 Hi there, I'm Jaggy! I'm a designer that loves writing, typography, UX, and code too.
 

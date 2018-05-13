@@ -4,6 +4,13 @@
 
 @push('head')
     <link href="{{ mix('css/prism.css') }}" rel="stylesheet">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ $page->title }} | Jaggy"/>
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+
+    <meta property="og:description" content="{{ $page->excerpt }}">
+    <meta property="description" content="{{ $page->excerpt }}">
 @endpush
 
 @push('foot')

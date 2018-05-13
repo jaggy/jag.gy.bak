@@ -2,6 +2,7 @@
 extends: _layouts.post
 section: content
 title:   Uses
+excerpt: I want to write mine down too to keep track of how often I switch my toolchain.
 ---
 I want to write mine down too to keep track of how often I switch my toolchain.
 
