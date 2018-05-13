@@ -22,7 +22,8 @@
                     @mouseenter="burger.hovering = true"
                     @mouseleave="burger.hovering = false"
                     :class="{
-                          '[ is-active ]': burger.active,
+                          '[ is-active ]':   burger.active,
+                          '[ is-hovering ]': burger.hovering,
                     }">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>

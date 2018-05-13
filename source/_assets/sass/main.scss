@@ -187,12 +187,8 @@ $hamburger-types:               ( elastic );
     transition: transform 0.4s ease-in-out;
 }
 
-.hamburger:hover {
+.hamburger.is-hovering {
     transform: translate(-2px, 2px);
-}
-
-.hamburger:focus {
-    transform: translate(0);
 }
 
 /**
