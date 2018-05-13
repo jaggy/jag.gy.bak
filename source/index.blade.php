@@ -19,7 +19,10 @@
         </p>
 
         <p class="mt-2">
-            Feel free to reach out at <a href="https://twitter.com/jaggygauran">Twitter</a> / <a href="https://github.com/jaggy">Github</a> / <a href="mailto:i.am@jag.gy">i.am@jag.gy</a> <span class="[ ml-1 ]">🎉</span>
+            Feel free to reach out at
+            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/jaggygauran">Twitter</a> /
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/jaggy">Github</a> /
+            <a rel="noopener noreferrer" href="mailto:i.am@jag.gy">i.am@jag.gy</a> <span class="[ ml-1 ]">🎉</span>
         </p>
 
         <nav class="[ mt-8 ]">

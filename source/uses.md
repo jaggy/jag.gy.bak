@@ -27,7 +27,7 @@ I want to write mine down too to keep track of how often I switch my toolchain.
 - [Basecamp](https://basecamp.com) is my _favorite_ project management app. I can't sing it enough praise on it just helps me get things done! I even migrated my bullet journal to a private project there.
 - I do most of my web design work in [Sketch](https://www.sketchapp.com/).
 - I was able to snag a lifetime [Droplr](https://www.droplr.com/) account. I've migrated _all_ of my screenshots there.
-- [IINA](https://lhc70000.github.io/iina/) is by far the _best_ media player for macOS.
+- [IINA](https://lhc70000.github.io/iina/) is by far the _best_ media player I've ever tried for macOS.
 
 ## Gear
 - I use a [Dell 4k P2715Q](#) as my primary display on an open 13" MacBook Pro on the side.
