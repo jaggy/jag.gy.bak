@@ -6,7 +6,7 @@
     <section class="posts [ py-12 ]">
         <h1 class="[ ms-2xl ]">Journal</h1>
 
-        <p>Take a look at some of my opinions on things!</p>
+        <p>Here's a collection of my opinions on different things.</p>
 
         <div class="post-list [ mt-8 ]">
             @foreach($posts as $post)

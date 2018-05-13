@@ -93,7 +93,7 @@ a {
 }
 
 .wipe-leave-active {
-    transition: transform 0.25s ease-in;
+    transition: transform 0.2s ease-in;
 }
 
 .wipe-enter {
@@ -101,6 +101,7 @@ a {
 }
 
 .wipe-leave-to {
+    transition-delay: 0.3s;
     transform: translateY(100%);
 }
 
@@ -117,8 +118,19 @@ a {
 .push-navigation li {
     opacity: 0;
     transform:  translateX(-20px);
-    transition: opacity 0.2s,
-                transform 0.3s ease-in-out;
+    transition: opacity 0.25s,
+                transform 0.35s ease-in-out;
+}
+
+.push-navigation.reveal li {
+    opacity: 1;
+    transform:  translateX(0);
+}
+
+.push-navigation.leaving li {
+    transition: opacity 0.15s, transform 0.1s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 @for $i from 0 through 9 {
@@ -127,11 +139,10 @@ a {
     .push-navigation li:nth-child(#{$child}) {
         transition-delay: $i * 0.14s;
     }
-}
 
-.push-navigation.reveal li {
-    opacity: 1;
-    transform:  translateX(0);
+    .push-navigation.leaving li:nth-child(#{$child}) {
+        transition-delay: $i * 0.075s;
+    }
 }
 
 /*

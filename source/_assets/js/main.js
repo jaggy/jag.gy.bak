@@ -13,8 +13,12 @@ new Vue({
     },
 
     methods: {
-        wipeAfter() {
+        afterEnter() {
             this.$refs.pushNavigation.classList.add('reveal')
+        },
+
+        beforeLeave() {
+            this.$refs.pushNavigation.classList.add('leaving')
         },
     },
 })

@@ -1,4 +1,7 @@
-<transition name="wipe" @after-enter="wipeAfter">
+<transition name="wipe"
+            @after-enter="afterEnter"
+            @before-leave="beforeLeave"
+    >
     <section v-if="burger.active" ref="pushNavigation"
         class="push-navigation [
                 flex items-center justify-center
