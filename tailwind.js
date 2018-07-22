@@ -150,7 +150,7 @@ module.exports = {
       'serif',
     ],
     'mono': [
-      'inconsolata',
+      'IBM Plex Mono',
       'Menlo',
       'Monaco',
       'Consolas',
@@ -845,7 +845,7 @@ module.exports = {
     }),
     require('tailwindcss-modularscale')({
       variants: ['responsive'],
-      base:  18,
+      base:  20,
       ratio: 1.414, // Perfect Fourth
     })
   ],

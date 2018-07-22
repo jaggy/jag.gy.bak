@@ -14,6 +14,7 @@
 @endpush
 
 @push('foot')
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <script src="{{ mix('js/thoughts.js') }}"></script>
 @endpush
 
