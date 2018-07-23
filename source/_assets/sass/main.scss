@@ -91,6 +91,10 @@ a {
         color: #202734;
         padding: 2px 5px;
     }
+
+    blockquote {
+        @apply pl-6 py-2 border-l-4 italic mb-3;
+    }
 }
 
 .wipe-enter-active {
