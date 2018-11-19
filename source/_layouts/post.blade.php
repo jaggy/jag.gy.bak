@@ -2,35 +2,19 @@
 
 @section('title', $page->title)
 
-@push('head')
-    <link href="{{ mix('css/prism.css') }}" rel="stylesheet">
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{{ $page->title }} | Jaggy"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-
-    <meta property="og:description" content="{{ $page->excerpt }}">
-    <meta name="description" content="{{ $page->excerpt }}">
-@endpush
-
-@push('foot')
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-    <script src="{{ mix('js/thoughts.js') }}"></script>
-@endpush
-
 @section('body')
-    <article class="post [ py-12 ]">
-        <header class="post-header [ mb-4 ]">
-            <h1 class="[ ms-2xl ]">{{ $page->title }}</h1>
-            @if($page->date)
-                <span class="post-date [ text-16 ]">
-                    {{ date('F d, Y', $page->date) }}
-                </span>
-            @endif
-        </header>
+<article class="post py-8">
+    <header class="post__header">
+        <div class="wrapper leading-none">
+            <span class="post__preamble tracking-wide uppercase font-display font-bold ms-sm">Unlearning</span>
+            <h1 class="post__name ms-2xl leading-none">{{ $page->title }}</h1>
+        </div>
+    </header>
 
-        <section class="post-content">
+    <section class="post__body">
+        <div class="wrapper py-4">
             @yield('content')
-        </section>
-    </article>
+        </div>
+    </section>
+</article>
 @endsection

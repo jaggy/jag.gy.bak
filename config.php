@@ -4,12 +4,10 @@ return [
     'baseUrl'     => '',
     'production'  => false,
     'collections' => [
-        'posts' => [
+        'unlearns' => [
             'path' => function ($page) {
-                return 'thoughts/' . preg_replace("/^([\d]+-)/", '', $page->getFilename());
+                return 'unlearns/' . preg_replace("/^([\d]+-)/", '', $page->getFilename());
             },
-            'sort' => '-date',
         ],
-        'for' => [],
     ],
 ];

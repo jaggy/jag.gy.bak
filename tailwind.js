@@ -123,7 +123,7 @@ module.exports = {
 
   fonts: {
     'serif': [
-      'kepler-std',
+      'freight-text-pro',
       'Georgia',
       'Constantia',
       'Lucida Bright',
@@ -136,8 +136,7 @@ module.exports = {
       'serif',
     ],
     'display': [
-      'kepler-std-display',
-      'kepler-std',
+      'halyard-display',
       'Georgia',
       'Constantia',
       'Lucida Bright',
@@ -845,8 +844,8 @@ module.exports = {
     }),
     require('tailwindcss-modularscale')({
       variants: ['responsive'],
-      base:  20,
-      ratio: 1.414, // Perfect Fourth
+      base:  22,
+      ratio: 1.3333, // Perfect Fourth
     })
   ],
 

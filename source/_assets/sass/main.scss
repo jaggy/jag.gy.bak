@@ -44,8 +44,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    background-color: #fcfcfc;
+html, body {
+    @apply .font-serif .leading-normal .tracking-normal .ms-base;
 }
 
 * {
@@ -53,151 +53,29 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply .font-display .font-medium .leading-tight;
+    @apply .font-display .font-bold .leading-tight;
 }
 
 a {
     @apply .text-pink;
 }
 
-.post {
-    h1 {
-        @apply .ms-2xl;
-    }
-
-    h2 {
-        @apply .ms-xl .mt-6 .mb-2;
-    }
-
-    ul {
-        @apply .mt-2;
-
-        ul {
-            @apply .mt-0;
-        }
-    }
-
-    pre + p,
-    p + pre,
-    p + p {
-        @apply .mt-3;
-    }
-
-    code:not([class*="language-"]) {
-        @apply font-mono;
-
-        font-size: 16px;
-        background-color: #f0f1f1;
-        color: #202734;
-        padding: 2px 5px;
-    }
-
-    blockquote {
-        @apply pl-6 py-2 border-l-4 italic mb-3;
-    }
+.wrapper {
+    @apply .max-w-md .px-4 .mx-auto;
 }
 
-.wipe-enter-active {
-    transition: transform 0.25s ease-out;
+.post__body p + p,
+.post__body p + blockquote,
+.post__body blockquote + p {
+    @apply .mt-3;
 }
 
-.wipe-leave-active {
-    transition: transform 0.25s ease-in;
+.post__body blockquote {
+    @apply .pl-4 .italic;
 }
 
-.wipe-enter {
-    transform: translateY(-100%);
-}
-
-.wipe-leave-to {
-    transition-delay: 0.3s;
-    transform: translateY(100%);
-}
-
-.edge {
-    z-index: -1;
-    transition: border-width 0.35s ease-in-out;
-}
-
-.overlay {
-    z-index: -2;
-    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.75);
-    transition: opacity 350ms ease-in-out;
-}
-
-.body {
-    transition: transform 0.35s ease-in-out;
-    transition-delay: 0.075s;
-    transform-origin: center;
-}
-
-.scale-down {
-    transform: scale(0.99);
-}
-
-.edge-top,
-.edge-bottom {
-    transition: height 0.35s ease-in-out;
-}
-
-.push-navigation li {
-    opacity: 0;
-    transform:  translateX(-20px);
-    transition: opacity 0.25s,
-                transform 0.35s ease-in-out;
-}
-
-.push-navigation.reveal li {
-    opacity: 1;
-    transform:  translateX(0);
-}
-
-.push-navigation.leaving li {
-    transition: opacity 0.15s, transform 0.1s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-@for $i from 0 through 9 {
-    $child: $i + 1;
-
-    .push-navigation li:nth-child(#{$child}) {
-        transition-delay: $i * 0.14s;
-    }
-
-    .push-navigation.leaving li:nth-child(#{$child}) {
-        transition-delay: $i * 0.05s;
-    }
-}
-
-/*
-|-----------------------------------------------------------------------------
-| Hamburgers                                    https://jonsuh.com/hamburgers/
-|-----------------------------------------------------------------------------
-|
-| This is the "hamburgers" in our package.json file.
-|
-*/
-
-$hamburger-padding-x:           12px;
-$hamburger-padding-y:           10px;
-$hamburger-layer-width:         18px;
-$hamburger-layer-height:        2px;
-$hamburger-layer-spacing:       4px;
-$hamburger-layer-color:         #fff;
-$hamburger-layer-border-radius: 4px;
-$hamburger-hover-opacity:       1;
-$hamburger-types:               ( elastic );
-
-@import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
-@import '../../../node_modules/hamburgers/_sass/hamburgers/base';
-
-.hamburger {
-    transition: transform 0.4s ease-in-out;
-}
-
-.hamburger.is-hovering {
-    transform: translate(-2px, 2px);
+.post__body h2 {
+    @apply .mt-6 .mb-2;
 }
 
 /**
@@ -224,6 +102,3 @@ $hamburger-types:               ( elastic );
  * @import "utilities/skew-transforms";
  */
 
-.outline-none:focus {
-    outline: none;
-}
