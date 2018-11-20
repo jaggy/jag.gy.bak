@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 title:   Chasing Shadows
+excerpt:
 ---
 
 Through most the years I've worked I've been chasing shadows.

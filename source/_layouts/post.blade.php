@@ -2,6 +2,15 @@
 
 @section('title', $page->title)
 
+@push('head')
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ $page->title }} | Jaggy"/>
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+
+    <!-- <meta property="og:description" content="{{ $page->excerpt }}"> -->
+    <!-- <meta name="description" content="{{ $page->excerpt }}"> -->
+@endpush
+
 @section('body')
 <article class="post py-8">
     <header class="post__header">
