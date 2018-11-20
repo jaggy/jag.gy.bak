@@ -54,9 +54,9 @@ I had to be efficient in my day to day life so I can churn more hours in work.
 
 It came crashing down when I've started rushing in the ER almost every single month.
 
-And for what? Did I get what I sought out to be? Did I cast my shadow in from the the people I was chasing?
+And for what? Did I get what I sought out to be? Did I cast my shadow to those whom I chased?
 
-> No.
+> Of course not.
 
 In reality, I'm just a regular person obsessed with whatever the fuck it was.
 
