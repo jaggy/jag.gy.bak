@@ -6,8 +6,10 @@
 <article class="post py-8">
     <header class="post__header">
         <div class="wrapper leading-none">
-            <span class="post__preamble tracking-wide uppercase font-display font-bold ms-sm">Unlearns</span>
-            <h1 class="post__name ms-2xl leading-none">{{ $page->title }}</h1>
+            <h1 class="post__name ms-2xl leading-none">
+                <span class="post__preamble block tracking-wide uppercase font-display font-bold ms-sm">Unlearns</span>
+                {{ $page->title }}
+            </h1>
         </div>
     </header>
 
