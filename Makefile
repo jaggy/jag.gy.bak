@@ -6,7 +6,7 @@ build:
 
 add_domain:
 	cd $(DIST_DIRECTORY)
-	echo "jag.gy" > CNAME
+	echo "beta.jag.gy" > CNAME
 
 persist:
 	cd $(DIST_DIRECTORY)
@@ -16,4 +16,4 @@ persist:
 
 deploy: build add_domain persist
 	cd $(DIST_DIRECTORY)
-	git push -f git@github.com:jaggy/jag.gy.git master:gh-pages
+	git push -f git@github.com:jaggy/beta.jag.gy.git master:gh-pages
