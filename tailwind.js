@@ -136,7 +136,8 @@ module.exports = {
       'serif',
     ],
     'display': [
-      'halyard-display',
+      // 'halyard-display',
+      'system-ui',
       'Georgia',
       'Constantia',
       'Lucida Bright',
@@ -845,7 +846,7 @@ module.exports = {
     require('tailwindcss-modularscale')({
       variants: ['responsive'],
       base:  22,
-      ratio: 1.3333, // Perfect Fourth
+      ratio: 1.333, // Perfect Fourth
     })
   ],
 
