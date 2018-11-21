@@ -3,9 +3,7 @@ extends: _layouts.post
 title:   Chasing Shadows
 ---
 
-Through most the years I've worked I've been chasing shadows.
-
-At the very start of my career as a developer, and a designer, I got an amazing opportunity to work with people whose work made me idolize them.
+At the very start of my career as a developer, and a designer, I got the opportunity to work with the most amazing people in the creative industry.
 
 It was difficult to fathon that these handful of people worked with brands, athletes, individuals that are well known throughout the industry. Not just here in the Philippines, but all over the world.
 

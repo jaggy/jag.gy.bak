@@ -53,7 +53,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply .font-display .font-extrabold .leading-tight;
+    @apply .font-display .font-bold .leading-tight;
 }
 
 a {
@@ -61,21 +61,31 @@ a {
 }
 
 .wrapper {
-    @apply .max-w-sm .px-4 .mx-auto;
+    @apply .px-4 .mx-auto;
+
+    max-width: 860px;
 }
 
-.post__body p + p,
-.post__body p + blockquote,
-.post__body blockquote + p {
-    @apply .mt-3;
-}
+.post__body {
+    p + p {
+        @apply .mt-4;
+    }
 
-.post__body blockquote {
-    @apply .pl-4 .italic;
-}
+    p:first-of-type {
+        @apply .ms-lg .mt-6;
+    }
 
-.post__body h2 {
-    @apply .mt-6 .mb-2 .ms-xl;
+    img, blockquote {
+        @apply .my-6;
+    }
+
+    blockquote {
+        @apply .pl-4 .italic;
+    }
+
+    h2 {
+        @apply .mt-8 .mb-2 .ms-xl;
+    }
 }
 
 /**
