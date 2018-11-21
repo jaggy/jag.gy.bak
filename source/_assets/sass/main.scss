@@ -63,7 +63,7 @@ a {
 .wrapper {
     @apply .px-4 .mx-auto;
 
-    max-width: 860px;
+    max-width: 800px;
 }
 
 .post__body {
@@ -84,7 +84,7 @@ a {
     }
 
     h2 {
-        @apply .mt-8 .mb-2 .ms-xl;
+        @apply .mt-8 .mb-1 .ms-xl;
     }
 }
 
