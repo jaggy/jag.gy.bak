@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 title:   Chasing Shadows
+excerpt:
 ---
 
 At the very start of my career as a developer, and a designer, I got the opportunity to work with the most amazing people in the creative industry.

@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title></title>
+        <title>
+            @yield('title')
+        </title>
 
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
         @stack('head')
 
-        <meta property="og:image" content="/assets/images/me.jpg">
         <link rel="stylesheet" href="https://use.typekit.net/aff2uwd.css">
     </head>
 
