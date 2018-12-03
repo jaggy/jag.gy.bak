@@ -136,7 +136,7 @@ module.exports = {
       'serif',
     ],
     'display': [
-      // 'halyard-display',
+      'poppins',
       'system-ui',
       'Georgia',
       'Constantia',
