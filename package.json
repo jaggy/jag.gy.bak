@@ -1,0 +1,13 @@
+{
+  "name": "jag.gy",
+  "version": "3.0.0",
+  "description": "Website! <3",
+  "main": "index.js",
+  "repository": "git@github.com:jaggy/jag.gy.git",
+  "author": "Jaggy Gauran <jaggy@artisan.studio>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
