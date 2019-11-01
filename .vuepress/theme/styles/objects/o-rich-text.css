@@ -12,7 +12,16 @@
     max-width: 160px;
   }
 
-  p.lede {
+  &.has-dropcap :first-child:first-letter {
+    font-size: 2.75em;
+    line-height: 1.1;
+    font-weight: 700;
+    float: left;
+    padding: 0 6px 0 0;
+    margin-bottom: -6px;
+  }
+
+  &.has-lede :first-child {
     @apply mb-8 leading-snug text-lg;
   }
 

@@ -13,7 +13,13 @@
   </header>
 
   <div class="o-content-container o-wrap">
-    <Content class="p-entry__content o-rich-text" ref="content" />
+    <Content
+      class="p-entry__content o-rich-text"
+      :class="{
+        'has-lede': hasLede,
+        'has-dropcap': hasDropcap,
+      }"
+      />
   </div>
 </article>
 </template>
@@ -38,24 +44,18 @@ export default {
       return tags
     },
 
-    usesLede () {
+    hasLede () {
       return this.$page.frontmatter.lede || false
+    },
+
+    hasDropcap () {
+      return this.$page.frontmatter.dropcap || false
     }
   },
 
   methods: {
     widont,
   },
-
-  mounted() {
-    if (this.usesLede) {
-      const lede = this.$refs.content.$el.firstChild
-
-      if (lede.tagName === 'P') {
-        lede.classList.add('lede')
-      }
-    }
-  }
 }
 </script>
 
