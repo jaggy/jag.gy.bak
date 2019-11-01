@@ -2,7 +2,7 @@
 <header class="c-header">
   <div class="o-content-container o-wrap">
     <RouterLink to="/">
-      <strong class="[ tracking-tighter ]">Jaggy</strong>
+      <strong class="[ tracking-tighter text-lg ]">Jaggy</strong>
     </RouterLink>
   </div>
 </header>
