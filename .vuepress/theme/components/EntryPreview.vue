@@ -2,7 +2,7 @@
   <article class="c-entry-preview">
     <header class="c-entry-preview__header">
       <RouterLink :to="entry.path">
-        <h3 class="c-entry-preview__title">{{ entry.frontmatter.title }}</h3>
+        <h2 class="c-entry-preview__title [ mb-4 ]">{{ entry.frontmatter.title }}</h2>
       </RouterLink>
     </header>
 
@@ -29,7 +29,4 @@ export default {
 </script>
 
 <style lang="postcss">
-.c-entry-preview__title {
-  @apply ms-2xl font-bold;
-}
 </style>
