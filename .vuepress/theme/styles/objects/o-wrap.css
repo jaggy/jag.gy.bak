@@ -3,5 +3,5 @@
 }
 
 .o-wrap--small {
-  @apply max-w-xl;
+  @apply max-w-2xl;
 }

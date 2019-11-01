@@ -6,7 +6,7 @@
         <li class="[ mx-2 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
-      <h1 class="p-entry__title">{{ $page.title }}</h1>
+      <h1 class="p-entry__title">{{ widont($page.title) }}</h1>
 
       <p class="[ mt-2 ms-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </div>
@@ -20,6 +20,7 @@
 
 <script>
 import moment from 'moment'
+import widont from 'widont'
 
 export default {
   computed: {
@@ -40,6 +41,10 @@ export default {
     usesLede () {
       return this.$page.frontmatter.lede || false
     }
+  },
+
+  methods: {
+    widont,
   },
 
   mounted() {
