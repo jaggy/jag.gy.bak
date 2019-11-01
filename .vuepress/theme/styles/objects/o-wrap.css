@@ -1,0 +1,7 @@
+.o-wrap {
+  @apply max-w-4xl mx-auto;
+}
+
+.o-wrap--small {
+  @apply max-w-xl;
+}
