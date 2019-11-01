@@ -4582,11 +4582,6 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1, mkdirp@~0.5.x:
   dependencies:
     minimist "0.0.8"
 
-modularscale-js@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/modularscale-js/-/modularscale-js-3.0.1.tgz#6b3e6a3ecac678210a14a3f700c4e7da141af9e3"
-  integrity sha1-az5qPsrGeCEKFKP3AMTn2hQa+eM=
-
 moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
@@ -6700,13 +6695,6 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
-
-tailwindcss-modularscale@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-modularscale/-/tailwindcss-modularscale-1.1.0.tgz#35b1cf30e88c9e5482176906621727dd16fc128c"
-  integrity sha512-by0YDLe0fYPuahX7gzLW0hhuq5+HMM71miQ/aQ4pqFF4NjzZuuYz8rLVVicFqIYi/tzktw4nCyHSq25rXaGvQw==
-  dependencies:
-    modularscale-js "^3.0.1"
 
 tailwindcss@^1.1.3:
   version "1.1.3"
