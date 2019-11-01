@@ -1,5 +1,1 @@
----
-layout: Page
----
-
-# Hoi
+Hi, I'm Jaggy.

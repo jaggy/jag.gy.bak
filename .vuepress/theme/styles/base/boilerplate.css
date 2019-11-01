@@ -1,0 +1,11 @@
+html {
+  @apply font-serif ms-base;
+}
+
+.o-content-container {
+  @apply px-6;
+}
+
+.o-wrap {
+  @apply max-w-3xl mx-auto;
+}

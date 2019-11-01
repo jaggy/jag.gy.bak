@@ -1,4 +1,7 @@
+@import url("https://use.typekit.net/jrk8lha.css");
+
 @import "tailwindcss/base";
+@import "base/boilerplate";
 
 @import "tailwindcss/components";
 
