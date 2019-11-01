@@ -1,3 +1,11 @@
 .o-content-container {
-  @apply px-6;
+  padding: 0 8vw;
+
+  @screen md  {
+    padding: 0 4vw;
+  }
+
+  @screen lg {
+    padding: 0;
+  }
 }

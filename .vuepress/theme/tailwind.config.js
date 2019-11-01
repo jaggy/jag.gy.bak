@@ -4,6 +4,36 @@ module.exports = {
       black: '#4b4f56',
     },
 
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1440px',
+    },
+
+    fontFamily: {
+      sans: [
+        // 'neue-haas-unica',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+      mono: [
+        'Inconsolata',
+        'monospace',
+      ]
+    },
+
     fontSize: {
       sm: '0.85em',
       base: '1em',
@@ -17,24 +47,6 @@ module.exports = {
       letterSpacing: {
         normal: '-0.02em'
       },
-
-      fontFamily: {
-        sans: [
-          // 'neue-haas-unica',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ]
-      }
     }
   },
   variants: {},

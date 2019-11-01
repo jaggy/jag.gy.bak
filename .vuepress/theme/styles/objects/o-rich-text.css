@@ -2,7 +2,7 @@
   text-rendering: optimizeLegibility;
 
   code, pre {
-    line-height: 1.75;
+    line-height: 1.5;
   }
 
   hr {
@@ -25,14 +25,18 @@
     @apply mb-8 leading-snug text-lg;
   }
 
-  code {
-    @apply p-0;
+  pre {
+    @apply rounded text-sm my-8 block;
+  }
+
+  @screen md {
+    pre {
+      font-size: 0.75em;
+    }
   }
 
   pre > code {
-    @apply p-6 rounded border w-full block my-8;
-
-    overflow-x: scroll;
+    @apply w-full block;
   }
 
   p code {

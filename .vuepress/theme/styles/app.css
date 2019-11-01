@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/jrk8lha.css");
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 @import "tailwindcss/base";
 
@@ -12,3 +12,5 @@
 @import "objects/o-wrap";
 
 @import "tailwindcss/utilities";
+
+@import "vendor/prism";

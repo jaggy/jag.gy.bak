@@ -1,7 +1,7 @@
 <template>
 <footer class="c-footer">
   <div class="o-content-container o-wrap">
-    Hi
+    <h4>👋 You made it down here!</h4>
   </div>
 </footer>
 </template>
