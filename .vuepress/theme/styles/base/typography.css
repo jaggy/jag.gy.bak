@@ -8,11 +8,11 @@ html {
   }
 
   @screen lg {
-    --font-size: calc(100vw / 55);
+    --font-size: calc(100vw / 50);
   }
 
   @screen xl {
-    --font-size: calc(100vw / 70);
+    --font-size: calc(100vw / 65);
   }
 
   font-size: var(--font-size);
