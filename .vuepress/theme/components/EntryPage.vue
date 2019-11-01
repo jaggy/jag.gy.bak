@@ -1,18 +1,18 @@
 <template>
 <article class="p-entry">
   <header class="p-entry__header [ py-12 mb-6 ]">
-    <div class="o-content-container o-wrap o-wrap--small">
+    <div class="o-content-container o-wrap">
       <ul class="p-entry__tags [ -mx-2 mb-6 ]">
         <li class="[ mx-2 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
       <h1 class="p-entry__title">{{ widont($page.title) }}</h1>
 
-      <p class="[ mt-2 ms-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ mt-2 text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </div>
   </header>
 
-  <div class="o-content-container o-wrap o-wrap--small">
+  <div class="o-content-container o-wrap">
     <Content class="p-entry__content o-rich-text" ref="content" />
   </div>
 </article>
@@ -61,6 +61,6 @@ export default {
 
 <style lang="postcss">
 .p-entry__tags {
-  @apply uppercase ms-sm flex opacity-75;
+  @apply uppercase text-sm flex opacity-75;
 }
 </style>

@@ -4,6 +4,15 @@ module.exports = {
       black: '#4b4f56',
     },
 
+    fontSize: {
+      sm: '0.85em',
+      base: '1em',
+      lg: '1.2em',
+      xl: '1.45em',
+      '2xl': '1.75em',
+      '3xl': '2.25em',
+    },
+
     extend: {
       letterSpacing: {
         normal: '-0.02em'
@@ -29,24 +38,4 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [
-    require('tailwindcss-modularscale')({
-      sizes: [
-        { size: 'xs', value: -2 },
-        { size: 'sm', value: -1 },
-        { size: 'base', value: 0 },
-        { size: 'lg', value: 1 },
-        { size: 'xl', value: 2 },
-        { size: '2xl', value: 3 },
-        { size: '3xl', value: 4 },
-        { size: '4xl', value: 5 },
-        { size: '5xl', value: 6 },
-        { size: '6xl', value: 7 },
-        { size: '7xl', value: 8 },
-      ],
-      base:  18,
-      ratio: 1.2,
-      unit: 'px',
-    })
-  ]
 }

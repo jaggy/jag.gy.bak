@@ -1,7 +1,9 @@
 <template>
 <header class="c-header">
   <div class="o-content-container o-wrap">
-    Hi
+    <RouterLink to="/">
+      <strong class="[ tracking-tighter ]">Jaggy</strong>
+    </RouterLink>
   </div>
 </header>
 </template>

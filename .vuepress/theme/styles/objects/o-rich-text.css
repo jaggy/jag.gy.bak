@@ -6,17 +6,14 @@
   }
 
   hr {
-    @apply mx-auto bg-no-repeat block w-full my-8 border-0 bg-black;
+    @apply mx-auto bg-no-repeat block w-full my-12 border-0 bg-black h-4;
 
     /* background-image: url(~assets/images/wiggle-loop.gif); */
-    height: 30px;
     max-width: 160px;
   }
 
   p.lede {
-    @apply mb-8 leading-snug;
-
-    font-size: 1.2em;
+    @apply mb-8 leading-snug text-lg;
   }
 
   code {
@@ -75,30 +72,18 @@
     @apply mt-8;
 
     margin-bottom: 0.4rem;
-
-    > code {
-      font-size: 28px;
-    }
   }
 
   h3 {
     @apply mt-5;
 
     margin-bottom: 0.35rem;
-
-    > code {
-      font-size: 23px;
-    }
   }
 
   h4 {
     @apply mt-4;
 
     margin-bottom: 0.3rem;
-
-    > code {
-      font-size: 19px;
-    }
   }
 
   h2:first-child,
@@ -108,9 +93,7 @@
   }
 
   blockquote {
-    @apply my-8 leading-snug max-w-lg border-l-2 pl-6 py-3;
-
-    font-size: 1.25em;
+    @apply my-8 leading-snug max-w-lg border-l-2 pl-6 py-3 text-lg;
   }
 
   blockquote p + p {
