@@ -1,5 +1,9 @@
 html {
-  @apply font-serif ms-base;
+  @apply font-sans ms-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
 }
 
 .o-content-container {
@@ -8,4 +12,161 @@ html {
 
 .o-wrap {
   @apply max-w-3xl mx-auto;
+}
+
+.c-anchor {
+    font-size: .85em;
+    float: left;
+    margin-left: -.87em;
+    padding-right: .23em;
+    margin-top: .125em;
+    opacity: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover .c-anchor {
+    opacity: 1;
+  }
+}
+
+.o-rich-text {
+  text-rendering: optimizeLegibility;
+
+  code, pre {
+    line-height: 1.75;
+  }
+
+  hr {
+    @apply mx-auto bg-no-repeat block w-full my-8;
+
+    /* background-image: url(~assets/images/wiggle-loop.gif); */
+    height: 30px;
+    max-width: 160px;
+  }
+
+  code {
+    @apply p-0;
+  }
+
+  pre > code {
+    @apply p-6 rounded border w-full block my-8;
+
+    overflow-x: scroll;
+  }
+
+  p code {
+    @apply px-2 py-1 rounded;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  p + p {
+    @apply mt-4;
+  }
+
+  ol, ul {
+    @apply pl-10 mb-3 mt-3;
+  }
+
+  li + li {
+    @apply mt-1;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  .c-image-block {
+    @apply my-8;
+  }
+
+  img:not(.js-mention__avatar) {
+    @apply block max-w-lg mx-auto rounded;
+  }
+
+  h2, h3, h4{
+    @apply leading-tight;
+  }
+
+  h2 > code,
+  h3 > code,
+  h4 > code {
+    @apply tracking-tight leading-none;
+  }
+
+  h2 {
+    @apply ms-xl mt-8;
+
+    margin-bottom: 0.4rem;
+
+    > code {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    @apply ms-lg mt-5;
+
+    margin-bottom: 0.35rem;
+
+    > code {
+      font-size: 23px;
+    }
+  }
+
+  h4 {
+    @apply ms-base mt-4;
+
+    margin-bottom: 0.3rem;
+
+    > code {
+      font-size: 19px;
+    }
+  }
+
+  h2:first-child,
+  h3:first-child,
+  h4:first-child {
+    @apply mt-0;
+  }
+
+  blockquote {
+    @apply ms-lg my-8 leading-snug max-w-lg border-l-2 pl-6 py-3;
+  }
+
+  blockquote p + p {
+    @apply mt-2;
+  }
+
+  @screen md {
+    h2 {
+      @apply ms-2xl mt-8;
+
+      > code {
+        font-size: 34px;
+      }
+    }
+
+    h3 {
+      @apply ms-xl mt-6;
+
+      > code {
+        font-size: 28px;
+      }
+    }
+
+    h4 {
+      @apply ms-lg mt-4;
+
+      > code {
+        font-size: 23px;
+      }
+    }
+  }
 }

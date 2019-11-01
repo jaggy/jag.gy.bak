@@ -2,9 +2,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: [
-          'itc-american-typewriter',
-          'serif'
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
         ]
       }
     }
@@ -22,7 +32,7 @@ module.exports = {
         { size: '4xl', value: 5 }
       ],
       base:  18,
-      ratio: 1.333, // Perfect Fourth
+      ratio: 1.212, // Perfect Fourth
       unit: 'px',
     })
   ]

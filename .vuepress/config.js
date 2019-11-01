@@ -9,5 +9,11 @@ module.exports = {
       ),
       require('postcss-nested'),
     ]
+  },
+
+  markdown: {
+    anchor: {
+      permalinkClass: 'c-anchor'
+    }
   }
 }

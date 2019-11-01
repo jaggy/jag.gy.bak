@@ -1,10 +1,16 @@
 <template>
   <article class="c-entry-preview">
-    <RouterLink :to="entry.path">
-      <h3 class="c-entry-preview__title">{{ entry.frontmatter.title }}</h3>
-    </RouterLink>
+    <header class="c-entry-preview__header">
+      <RouterLink :to="entry.path">
+        <h3 class="c-entry-preview__title">{{ entry.frontmatter.title }}</h3>
+      </RouterLink>
+    </header>
 
     <div class="c-entry-preview__content o-rich-text" v-html="entry.excerpt" />
+
+    <RouterLink :to="entry.path" class="[ font-bold ]">
+      {{ callToAction }}
+    </RouterLink>
   </article>
 </template>
 
@@ -13,6 +19,12 @@ export default {
   props: {
     entry: Object,
   },
+
+  computed: {
+    callToAction () {
+      return this.entry.frontmatter['call-to-action'] || 'Read more'
+    }
+  }
 }
 </script>
 

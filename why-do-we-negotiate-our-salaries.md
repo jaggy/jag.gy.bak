@@ -1,6 +1,7 @@
 ---
 title: Why do we negotiate our salaries?
 date: 2019-06-26
+call-to-action: Tell me why!
 ---
 
 A couple of days ago, around 3 in the afternoon, an email was sent to all of the regular employees. Within the email was their new salary _adjusted to inflation_. _Everyone_ was either frustrated, or "I knew it would be this low".
