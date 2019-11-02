@@ -14,6 +14,11 @@ module.exports = {
     },
 
     fontFamily: {
+      script: [
+        'Sedgwick Ave',
+        'cursive',
+      ],
+
       sans: [
         // 'neue-haas-unica',
         '-apple-system',
@@ -38,10 +43,10 @@ module.exports = {
     fontSize: {
       sm: '0.85em',
       base: '1em',
-      lg: '1.2em',
-      xl: '1.45em',
-      '2xl': '1.75em',
-      '3xl': '2.25em',
+      lg: '1.25em',
+      xl: '1.6em',
+      '2xl': '2em',
+      '3xl': '2.5em',
     },
 
     extend: {

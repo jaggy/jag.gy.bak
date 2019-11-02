@@ -32,6 +32,6 @@ export default {
 }
 
 .p-home__entry + .p-home__entry {
-  @apply mt-6;
+  @apply mt-12;
 }
 </style>

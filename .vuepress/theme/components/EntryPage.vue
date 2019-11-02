@@ -6,7 +6,7 @@
         <li class="[ mx-2 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
-      <h1 class="p-entry__title">{{ widont($page.title) }}</h1>
+      <h1 class="p-entry__title">{{ title }}</h1>
 
       <p class="[ text-gray text-sm mt-2 ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </div>
@@ -30,6 +30,10 @@ import widont from 'widont'
 
 export default {
   computed: {
+    title () {
+      return widont(this.$page.title)
+    },
+
     date () {
       return moment(this.$page.frontmatter.date)
     },
@@ -51,10 +55,6 @@ export default {
     hasDropcap () {
       return this.$page.frontmatter.dropcap || false
     }
-  },
-
-  methods: {
-    widont,
   },
 }
 </script>

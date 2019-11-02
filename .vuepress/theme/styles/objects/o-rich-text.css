@@ -106,7 +106,7 @@
   }
 
   blockquote {
-    @apply my-8 leading-snug max-w-lg border-l-2 pl-6 py-3 text-lg;
+    @apply font-script my-8 leading-snug max-w-lg border-l-2 pl-6 py-3 text-lg tracking-wide;
   }
 
   blockquote p + p {

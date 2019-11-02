@@ -2,7 +2,7 @@
   <article class="c-entry-preview">
     <header class="c-entry-preview__header">
       <RouterLink :to="entry.path">
-        <h2 class="c-entry-preview__title">{{ entry.frontmatter.title }}</h2>
+        <h2 class="c-entry-preview__title">{{ title }}</h2>
       </RouterLink>
 
       <p class="[ text-gray text-sm mt-2 ]">Published {{ date.format('MMMM d, YYYY') }}</p>
@@ -11,7 +11,7 @@
     <div class="c-entry-preview__content o-rich-text [ mt-4 ]" v-html="entry.excerpt" />
 
     <div class="[ flex ]">
-      <RouterLink :to="entry.path" class="[ font-bold mt-6 ml-auto ]">
+      <RouterLink :to="entry.path" class="[ font-script mt-1 text-lg ml-auto ]">
         {{ callToAction }}
       </RouterLink>
     </div>
@@ -20,6 +20,7 @@
 
 <script>
 import moment from 'moment'
+import widont from 'widont'
 
 export default {
   props: {
@@ -33,8 +34,12 @@ export default {
 
     date () {
       return moment(this.entry.frontmatter.date)
+    },
+
+    title () {
+      return widont(this.entry.frontmatter.title)
     }
-  }
+  },
 }
 </script>
 
