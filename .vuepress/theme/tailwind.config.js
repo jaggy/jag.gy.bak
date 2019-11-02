@@ -19,8 +19,8 @@ module.exports = {
 
     fontFamily: {
       script: [
-        '"Gochi Hand"',
-        'cursive',
+        'marydale',
+        'sans-serif',
       ],
 
       sans: [
@@ -45,14 +45,14 @@ module.exports = {
     },
 
     fontSize: {
-      xs: '0.7em',
-      sm: '0.85em',
+      xs: '0.64em',
+      sm: '0.8em',
       base: '1em',
       lg: '1.25em',
-      xl: '1.6em',
-      '2xl': '1.95em',
-      '3xl': '2.45em',
-      '4xl': '2.8em',
+      xl: '1.563em',
+      '2xl': '1.953em',
+      '3xl': '2.441em',
+      '4xl': '3.052em',
     },
 
     extend: {
