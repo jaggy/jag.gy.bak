@@ -2,7 +2,7 @@
 <div class="p-home">
   <div class="o-content-container o-wrap">
     <section class="p-home__entries">
-      <EntryPreview v-for="entry in entries" :key="entry.key" :entry="entry" />
+      <EntryPreview class="p-home__entry" v-for="entry in entries" :key="entry.key" :entry="entry" />
     </section>
   </div>
 </div>
@@ -18,11 +18,20 @@ export default {
 
   computed: {
     entries() {
-      return this.$site.pages.filter(page => page.path !== '/')
+      return this.$site.pages
+        .filter(page => page.path !== '/')
+        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
     }
   }
 }
 </script>
 
 <style lang="postcss">
+.p-home {
+  @apply mt-12;
+}
+
+.p-home__entry + .p-home__entry {
+  @apply mt-6;
+}
 </style>

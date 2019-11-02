@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     colors: {
       black: '#4b4f56',
+      gray: '#888888',
     },
 
     screens: {

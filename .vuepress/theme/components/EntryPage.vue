@@ -8,7 +8,7 @@
 
       <h1 class="p-entry__title">{{ widont($page.title) }}</h1>
 
-      <p class="[ mt-2 text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ text-gray text-sm mt-2 ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </div>
   </header>
 
