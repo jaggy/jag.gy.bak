@@ -1,8 +1,8 @@
 .o-rich-text {
-  text-rendering: optimizeLegibility;
+  @apply text-legible;
 
   code, pre {
-    line-height: 1.5;
+    @apply leading-normal;
   }
 
   hr {
