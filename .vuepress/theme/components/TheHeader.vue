@@ -1,7 +1,7 @@
 <template>
 <header class="c-header">
   <div class="o-content-container o-wrap">
-    <RouterLink to="/">
+    <RouterLink to="/" class="[ text-black ]">
       <strong class="[ font-script tracking-wide text-lg ]">👋 Jaggy</strong>
     </RouterLink>
   </div>

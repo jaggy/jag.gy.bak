@@ -1,11 +1,11 @@
 <template>
   <article class="c-entry-preview">
     <header class="c-entry-preview__header">
-      <RouterLink :to="entry.path">
+      <RouterLink :to="entry.path" class="[ text-black ]">
         <h2 class="c-entry-preview__title">{{ title }}</h2>
       </RouterLink>
 
-      <p class="[ text-gray text-sm mt-2 ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </header>
 
     <div class="c-entry-preview__content o-rich-text [ mt-4 ]" v-html="entry.excerpt" />

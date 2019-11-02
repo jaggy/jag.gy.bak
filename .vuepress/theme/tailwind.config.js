@@ -3,6 +3,10 @@ module.exports = {
     colors: {
       black: '#4b4f56',
       gray: '#888888',
+      yellow: '#ffde00',
+      pink: '#ff0074',
+
+      primary: 'var(--color-primary)',
     },
 
     screens: {
@@ -15,7 +19,7 @@ module.exports = {
 
     fontFamily: {
       script: [
-        'Sedgwick Ave',
+        '"Gochi Hand"',
         'cursive',
       ],
 
@@ -41,12 +45,14 @@ module.exports = {
     },
 
     fontSize: {
+      xs: '0.7em',
       sm: '0.85em',
       base: '1em',
       lg: '1.25em',
       xl: '1.6em',
-      '2xl': '2em',
-      '3xl': '2.5em',
+      '2xl': '1.95em',
+      '3xl': '2.45em',
+      '4xl': '2.8em',
     },
 
     extend: {

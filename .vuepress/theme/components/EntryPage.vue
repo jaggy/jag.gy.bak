@@ -2,13 +2,13 @@
 <article class="p-entry">
   <header class="p-entry__header [ py-12 mb-6 ]">
     <div class="o-content-container o-wrap">
-      <ul class="p-entry__tags [ -mx-2 mb-6 ]">
-        <li class="[ mx-2 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
+      <ul class="p-entry__tags [ mb-4 ]">
+        <li class="[ mr-6 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
       <h1 class="p-entry__title">{{ title }}</h1>
 
-      <p class="[ text-gray text-sm mt-2 ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
     </div>
   </header>
 
@@ -61,6 +61,6 @@ export default {
 
 <style lang="postcss">
 .p-entry__tags {
-  @apply uppercase text-sm flex opacity-75;
+  @apply font-bold uppercase tracking-wider text-xs flex text-gray;
 }
 </style>
