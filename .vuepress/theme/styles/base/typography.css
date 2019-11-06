@@ -4,19 +4,19 @@ html {
   --font-size: calc(100vw / 30);
 
   @screen md {
-    --font-size: calc(100vw / 45);
+    --font-size: calc(100vw / 40);
   }
 
   @screen lg {
-    --font-size: calc(100vw / 55);
+    --font-size: calc(100vw / 50);
   }
 
   @screen xl {
-    --font-size: calc(100vw / 70);
+    --font-size: calc(100vw / 60);
   }
 
   @screen 2xl {
-    --font-size: calc(100vw / 80);
+    --font-size: calc(100vw / 70);
   }
 
   font-size: var(--font-size);
