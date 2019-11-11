@@ -1,7 +1,7 @@
 html {
   @apply font-serif leading-normal text-black tracking-normal;
 
-  --font-size: calc(100vw / 30);
+  --font-size: calc(100vw / 28);
 
   @screen md {
     --font-size: calc(100vw / 40);
