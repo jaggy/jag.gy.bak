@@ -19,6 +19,7 @@ export default {
   computed: {
     entries() {
       return this.$site.pages
+        .filter(page => page.is_published || false)
         .filter(page => page.path !== '/')
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
     }

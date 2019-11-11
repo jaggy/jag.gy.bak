@@ -2,6 +2,7 @@
 title: Laravel Echo, Nuxt, and Websockets
 date: 2019-11-02
 permalink: /laravel-echo-nuxt-and-websockets
+is_published: false
 ---
 
 I've recently come across the [Laravel Websockets](https://docs.beyondco.de/laravel-websockets/) package. It's a Pusher replacement when it comes to web sockets.
@@ -15,6 +16,27 @@ Here are the things I want to hit off when working with the web sockets:
 <!-- more -->
 
 ## Here's my setup
+
+```php
+[
+    'driver'  => 'pusher',
+    'key'     => env('PUSHER_APP_KEY'),
+    'secret'  => env('PUSHER_APP_SECRET'),
+    'app_id'  => env('PUSHER_APP_ID'),
+    'options' => [
+        'cluster'      => env('PUSHER_APP_CLUSTER'),
+        'useTLS'       => true,
+        'host'         => env('PUSHER_APP_HOST', 'localhost'),
+        'port'         => env('PUSHER_APP_PORT', 6001),
+        'encrypted'    => env('PUSHER_APP_SCHEME') === 'http',
+        'scheme'       => env('PUSHER_APP_SCHEME'),
+        'curl_options' => [
+            CURLOPT_SSL_VERIFYHOST => 0,
+            CURLOPT_SSL_VERIFYPEER => 0,
+        ],
+    ],
+]
+```
 
 
 ## Things I want to work on

@@ -1,5 +1,5 @@
 html {
-  @apply font-sans leading-normal text-black tracking-normal;
+  @apply font-serif leading-normal text-black tracking-normal;
 
   --font-size: calc(100vw / 30);
 

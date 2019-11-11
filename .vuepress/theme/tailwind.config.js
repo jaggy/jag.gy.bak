@@ -23,24 +23,13 @@ module.exports = {
         'sans-serif',
       ],
 
-      sans: [
-        // 'neue-haas-unica',
+      serif: [
         'freight-text-pro',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
+        'serif',
       ],
+
       mono: [
-        'Inconsolata',
+        'google-ligconsolata',
         'monospace',
       ]
     },
