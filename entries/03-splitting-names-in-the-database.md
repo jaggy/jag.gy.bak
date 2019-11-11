@@ -1,7 +1,7 @@
 ---
-title: Splitting names in the database
+title: Using a full name in the database
 date: 2019-11-11
-permalink: /splitting-names-in-the-database
+permalink: /using-a-full-name-in-the-database
 is_published: true
 ---
 

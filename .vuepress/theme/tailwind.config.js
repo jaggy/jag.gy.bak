@@ -18,6 +18,11 @@ module.exports = {
     },
 
     fontFamily: {
+      heading: [
+        'bely-display',
+        'serif',
+      ],
+
       script: [
         'marydale',
         'sans-serif',
