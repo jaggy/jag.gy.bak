@@ -1,3 +1,7 @@
 .o-wrap {
   @apply max-w-lg mx-auto;
 }
+
+.o-wrap--large {
+  @apply max-w-3xl;
+}

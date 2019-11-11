@@ -14,6 +14,11 @@ module.exports = {
   markdown: {
     anchor: {
       permalinkClass: 'c-anchor',
+    },
+
+    extendMarkdown: md => {
+      // use more markdown-it plugins!
+      md.use(require('markdown-it-attrs'))
     }
   }
 }

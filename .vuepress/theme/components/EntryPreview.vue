@@ -1,19 +1,23 @@
 <template>
   <article class="c-entry-preview">
     <header class="c-entry-preview__header">
-      <RouterLink :to="entry.path" class="[ text-black ]">
-        <h2 class="c-entry-preview__title">{{ title }}</h2>
-      </RouterLink>
+      <div class="o-wrap o-wrap--large">
+        <RouterLink :to="entry.path" class="[ text-black ]">
+          <h2 class="c-entry-preview__title [ text-4xl ]">{{ title }}</h2>
+        </RouterLink>
 
-      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM D, YYYY') }}</p>
+        <p class="[ text-gray text-sm mt-4 ]">Published {{ date.format('MMMM D, YYYY') }}</p>
+      </div>
     </header>
 
-    <div class="c-entry-preview__content o-rich-text [ mt-4 ]" v-html="entry.excerpt" />
+    <div class="o-wrap [ mt-8 ]">
+      <div class="c-entry-preview__content o-rich-text" v-html="entry.excerpt" />
 
-    <div class="[ flex ]">
-      <RouterLink :to="entry.path" class="[ font-heading mt-1 text-lg ml-auto ]">
-        {{ callToAction }}
-      </RouterLink>
+      <div class="[ flex mt-4 ]">
+        <RouterLink :to="entry.path" class="[ font-heading mt-1 text-lg ml-auto ]">
+          {{ callToAction }}
+        </RouterLink>
+      </div>
     </div>
   </article>
 </template>
@@ -44,4 +48,7 @@ export default {
 </script>
 
 <style lang="postcss">
+.c-entry-preview__header {
+  @apply text-center;
+}
 </style>

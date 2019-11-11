@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     colors: {
-      black: '#4b4f56',
+      black: '#11101e',
       gray: '#888888',
       yellow: '#ffde00',
       pink: '#ff0074',
@@ -52,7 +52,10 @@ module.exports = {
     },
 
     extend: {
-    }
+      lineHeight: {
+        normal: '1.414',
+      },
+    },
   },
   variants: {},
 }

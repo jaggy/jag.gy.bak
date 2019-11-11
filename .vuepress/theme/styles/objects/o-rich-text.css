@@ -1,14 +1,6 @@
 .o-rich-text {
   @apply text-legible;
 
-  h2, h3, h4 {
-    hanging-punctuation: first;
-  }
-
-  h2 { @apply text-2xl; }
-  h3 { @apply text-xl; }
-  h4 { @apply text-lg; }
-
   img {
     max-width: 100%;
     width: 100%;
@@ -84,30 +76,28 @@
    @apply block max-w-lg mx-auto rounded;
   }
 
-  h2, h3, h4 {
-    @apply leading-tight;
+  .hanging-punctuation {
+    text-indent: -0.5em;
   }
 
-  h2 > code,
-  h3 > code,
-  h4 > code {
-    @apply tracking-tight leading-none;
+  h2, h3, h4 {
+    line-height: 1.2;
   }
 
   h2 {
-    @apply mt-16;
+    @apply mt-16 text-2xl;
 
     margin-bottom: 0.4rem;
   }
 
   h3 {
-    @apply mt-12;
+    @apply mt-8 text-xl;
 
     margin-bottom: 0.35rem;
   }
 
   h4 {
-    @apply mt-8;
+    @apply mt-6 text-lg;
 
     margin-bottom: 0.3rem;
   }
