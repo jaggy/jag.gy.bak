@@ -16,10 +16,10 @@ same conversation again.
 <!-- more -->
 
 ## Setting up the scene
-I live in the Philippines. Most of the forms here have **first**, **middle**, and **last** names. As
-an example, my name is "Jose Andres C. Gauran". Here's how our forms break it down.
+I live in the Philippines. Most of the forms here have **first**, **middle**, and **last** names.
+Here's a breakdown of my legal name as an example.
 
-INSERT PICTURE HERE
+![Breakdown of my legal name](../assets/dist/03/full-name.png)
 
 I'm not sure with how other countries define it but here, **middle name** is the mother's maiden
 last name. A lot of organizations still use this insecure piece of information to verify the

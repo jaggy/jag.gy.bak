@@ -1,6 +1,11 @@
 .o-rich-text {
   @apply text-legible;
 
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
   code, pre {
     @apply leading-normal;
   }
