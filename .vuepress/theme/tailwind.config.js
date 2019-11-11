@@ -20,7 +20,6 @@ module.exports = {
     fontFamily: {
       heading: [
         'moret',
-        'bely-display',
         'serif',
       ],
 

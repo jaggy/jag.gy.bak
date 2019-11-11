@@ -2,7 +2,7 @@
 <header class="c-header">
   <div class="o-content-container o-wrap">
     <RouterLink to="/" class="[ text-black ]">
-      <strong class="[ font-script tracking-wide text-lg ]">👋 Jaggy</strong>
+      <strong class="[ font-heading text-xl ]">Jaggy 👋</strong>
     </RouterLink>
   </div>
 </header>
