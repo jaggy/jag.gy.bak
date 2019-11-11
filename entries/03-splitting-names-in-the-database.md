@@ -1,7 +1,7 @@
 ---
-title: Using a full name in the database
+title: Using full names in the database
 date: 2019-11-11
-permalink: /using-a-full-name-in-the-database
+permalink: /using-full-names-in-the-database
 is_published: true
 ---
 

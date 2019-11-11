@@ -8,7 +8,7 @@
 
       <h1 class="p-entry__title">{{ title }}</h1>
 
-      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM D, YYYY') }}</p>
     </div>
   </header>
 
