@@ -11,7 +11,7 @@
     <div class="c-entry-preview__content o-rich-text [ mt-4 ]" v-html="entry.excerpt" />
 
     <div class="[ flex ]">
-      <RouterLink :to="entry.path" class="[ font-script mt-1 text-lg ml-auto ]">
+      <RouterLink :to="entry.path" class="[ font-heading mt-1 text-lg ml-auto ]">
         {{ callToAction }}
       </RouterLink>
     </div>
@@ -29,7 +29,7 @@ export default {
 
   computed: {
     callToAction () {
-      return this.entry.frontmatter['call-to-action'] || 'Read more'
+      return this.entry.frontmatter.call_to_action || 'Read more 👉'
     },
 
     date () {
