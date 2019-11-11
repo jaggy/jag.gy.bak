@@ -53,7 +53,7 @@ for the off chance we need name-based analytics.
 
 Okay, let's see how this goes.
 
-## "_What if_ we need to **search** by the last name?"
+## “What if we need to **search** by the last name?”
 Let's take a part of my first name, Jose. Some people have this as their family name! Well, they say
 that splitting names into appropriate fields can help with the search of specific families and avoid
 results that contain the first name.
@@ -80,7 +80,7 @@ Also, if there's no budget or time to optimize a comprehensive search, there are
 Algolia that help save a ton of time!
 
 
-## "_What if_ we need **analytics** based on the name?"
+## “What if we need **analytics** based on the name?”
 I get this a lot too but I never really got to do anything with this.
 
 Even after someone pulled rank, forced multiple name fields, there wasn't really anything specific
