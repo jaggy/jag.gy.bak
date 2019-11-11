@@ -5,7 +5,7 @@
         <h2 class="c-entry-preview__title">{{ title }}</h2>
       </RouterLink>
 
-      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM d, YYYY') }}</p>
+      <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM D, YYYY') }}</p>
     </header>
 
     <div class="c-entry-preview__content o-rich-text [ mt-4 ]" v-html="entry.excerpt" />

@@ -19,6 +19,7 @@ module.exports = {
 
     fontFamily: {
       heading: [
+        'jubilat',
         'moret',
         'serif',
       ],
@@ -29,6 +30,7 @@ module.exports = {
       ],
 
       serif: [
+        '-system-ui',
         'freight-text-pro',
         'serif',
       ],
@@ -40,14 +42,14 @@ module.exports = {
     },
 
     fontSize: {
-      xs: '0.64em',
-      sm: '0.8em',
+      xs: '0.694em',
+      sm: '0.833em',
       base: '1em',
-      lg: '1.25em',
-      xl: '1.563em',
-      '2xl': '1.953em',
-      '3xl': '2.441em',
-      '4xl': '3.052em',
+      lg: '1.2em',
+      xl: '1.44em',
+      '2xl': '1.728em',
+      '3xl': '2.074em',
+      '4xl': '2.488em',
     },
 
     extend: {
