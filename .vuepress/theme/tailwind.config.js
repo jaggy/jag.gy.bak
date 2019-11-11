@@ -19,20 +19,18 @@ module.exports = {
 
     fontFamily: {
       heading: [
-        'jubilat',
-        'moret',
+        'poynter-oldstyle-display',
+        'serif',
+      ],
+
+      body: [
+        'poynter-oldstyle-text',
         'serif',
       ],
 
       script: [
-        'marydale',
+        'jakob',
         'sans-serif',
-      ],
-
-      serif: [
-        '-system-ui',
-        'freight-text-pro',
-        'serif',
       ],
 
       mono: [
@@ -50,6 +48,7 @@ module.exports = {
       '2xl': '1.728em',
       '3xl': '2.074em',
       '4xl': '2.488em',
+      '5xl': '2.986em',
     },
 
     extend: {

@@ -6,7 +6,7 @@
         <li class="[ mr-6 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
-      <h1 class="p-entry__title">{{ title }}</h1>
+      <h1 class="p-entry__title [ text-5xl ]">{{ title }}</h1>
 
       <p class="[ text-gray text-sm ]">Published {{ date.format('MMMM D, YYYY') }}</p>
     </div>
@@ -49,11 +49,11 @@ export default {
     },
 
     hasLede () {
-      return this.$page.frontmatter.lede || false
+      return !! this.$page.frontmatter.lede
     },
 
     hasDropcap () {
-      return this.$page.frontmatter.dropcap || false
+      return !! this.$page.frontmatter.dropcap
     }
   },
 }

@@ -13,7 +13,7 @@ module.exports = {
 
   markdown: {
     anchor: {
-      permalinkClass: 'c-anchor'
+      permalinkClass: 'c-anchor',
     }
   }
 }
