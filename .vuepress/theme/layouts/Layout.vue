@@ -8,7 +8,7 @@
     </Transition>
   </main>
 
-  <TheFooter class="l-app__footer [ mt-12 ]" />
+  <TheFooter class="l-app__footer [ mt-20 ]" />
 </div>
 </template>
 

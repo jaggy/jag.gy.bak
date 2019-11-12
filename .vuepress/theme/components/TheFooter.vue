@@ -1,6 +1,6 @@
 <template>
 <footer class="c-footer">
-  <div class="o-content-container o-wrap">
+  <div class="o-content-container--full">
     <h4 class="[ text-lg font-script font-normal ]">🌊 Huzah! You made it down here!</h4>
   </div>
 </footer>

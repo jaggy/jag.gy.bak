@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    {{{ userHeadTags }}}
+    {{{ pageMeta }}}
+    {{{ renderResourceHints() }}}
+    {{{ renderStyles() }}}
+  </head>
+  <body>
+    <!--vue-ssr-outlet-->
+    {{{ renderScripts() }}}
+
+    <script src="https://use.typekit.net/jrk8lha.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>

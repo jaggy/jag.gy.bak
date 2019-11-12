@@ -4,6 +4,7 @@
         url('../fonts/Ligconsolata-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,5 +13,6 @@
         url('../fonts/Ligconsolata-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 

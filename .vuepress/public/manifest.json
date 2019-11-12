@@ -3,6 +3,11 @@
   "short_name": "Jaggy",
   "icons": [
     {
+      "src": "\/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
       "src": "\/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image\/png",
