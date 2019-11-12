@@ -49,10 +49,6 @@ While I do understand the sentiment, I think this should be more on improving th
 
 There _may_ be some cases that they want to know if there are family members with an account but that might be more of a security issue which is a whole other conversation.
 
-"This should be smart quotes."
-
-
-
 #### “But won’t that slow down the search?” {.hanging-punctuation}
 
 I think we're at a point in tech where pretty small servers can do pretty optimized calculations because of the efficiency of the tools we have. We can still do performant searches in a table with a couple of million of rows.
