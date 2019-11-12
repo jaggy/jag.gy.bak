@@ -19,6 +19,10 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.ligatures {
+  font-feature-settings: "liga" 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @apply font-heading font-black leading-none tracking-tight;
 }

@@ -1,5 +1,5 @@
 .o-rich-text {
-  @apply text-legible;
+  @apply text-legible ligatures;
 
   a:not(.c-anchor) {
     @apply underline;
@@ -23,6 +23,10 @@
 
   code, pre {
     @apply leading-normal;
+  }
+
+  code {
+    font-size: 1.05em;
   }
 
   hr {

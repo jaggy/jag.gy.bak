@@ -41,7 +41,7 @@ Because of these "what-ifs" a lot of systems here are designed where the first, 
 
 Let's hit off these points and see what the common responses I usually get.
 
-### “What if we need to **search** by the last name?”                         {.hanging-punctuation}
+### “What if we need to **search** by the last name?” {.hanging-punctuation}
 
 Jose, a part of my first name, is a also a family name here. It's often argued that it saves a lot of time by splitting the names into fields so results won't be as much, or even have results from the first name.
 
@@ -49,7 +49,11 @@ While I do understand the sentiment, I think this should be more on improving th
 
 There _may_ be some cases that they want to know if there are family members with an account but that might be more of a security issue which is a whole other conversation.
 
-#### But what about the speed of the search?
+"This should be smart quotes."
+
+
+
+#### “But won’t that slow down the search?” {.hanging-punctuation}
 
 I think we're at a point in tech where pretty small servers can do pretty optimized calculations because of the efficiency of the tools we have. We can still do performant searches in a table with a couple of million of rows.
 
@@ -57,11 +61,11 @@ I'll be honest, I've never worked on a project where searching specifically for 
 
 If it's about budget of implementing a better search, then there are services like Algolia that provide really really amazing search results with large chunks of data.
 
-### “What if we need **analytics** based on the name?”                        {.hanging-punctuation}
+### “What if we need **analytics** based on the name?” {.hanging-punctuation}
 
 This gets said more often than it should. Even when the client pulled rank and the name was segmented, we never really did any analytics with the name.
 
-### “What if we wanted to be more personal by using their first name?”        {.hanging-punctuation}
+### “What if we wanted to be more personal by using their first name?” {.hanging-punctuation}
 
 I either just get the actual first part of the name, or add a nickname field in the user's profile. I personally don't really use my legal name. I use **Jaggy** publicly so reading emails that say my legal first name is pretty weird.
 
@@ -95,14 +99,17 @@ SELECT * FROM customers WHERE name LIKE "%Jose%";
 Cache the results, and it won't be as expensive as people make it out to be. If we want to do some sort of sorting on the code-side we can do something like this.
 
 ```php
-Customer::search($request->input('name'))
+Customer::query()
+  ->search($request->input('name'))
   ->get()
   ->sort(function ($customer) use ($request) {
     return strpos($customer->name, $request->name);
   });
 ```
 
-Which should sort the name based on the position of the keyword. I'm just not sure if it's ascending or descending or if it even works, I'm just eyeballing it. :sweat_smile:
+> This is just me eyeballing the code so this might not really work. :sweat_smile:
+
+Which should sort the name based on the position of the keyword. In descending order? I'm not quite sure.
 
 ## Let me know what you think
 
