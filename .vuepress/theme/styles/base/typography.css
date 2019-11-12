@@ -1,22 +1,10 @@
 html {
   @apply font-body leading-normal text-black tracking-normal;
 
-  --font-size: calc(100vw / 29);
+  --font-size: calc(1em + 0.5vw);
 
   @screen md {
-    --font-size: calc(100vw / 40);
-  }
-
-  @screen lg {
-    --font-size: calc(100vw / 50);
-  }
-
-  @screen xl {
-    --font-size: calc(100vw / 60);
-  }
-
-  @screen 2xl {
-    --font-size: calc(100vw / 70);
+    --font-size: calc(0.9em + 0.5vw);
   }
 
   font-size: var(--font-size);
@@ -32,7 +20,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-heading font-black leading-none;
+  @apply font-heading font-black leading-none tracking-tight;
 }
 
 h1 {

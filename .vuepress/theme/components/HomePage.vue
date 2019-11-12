@@ -1,10 +1,8 @@
 <template>
 <div class="p-home">
-  <div class="o-content-container">
-    <section class="p-home__entries">
-      <EntryPreview class="p-home__entry" v-for="entry in entries" :key="entry.key" :entry="entry" />
-    </section>
-  </div>
+  <section class="p-home__entries">
+    <EntryPreview class="p-home__entry" v-for="entry in entries" :key="entry.key" :entry="entry" />
+  </section>
 </div>
 </template>
 

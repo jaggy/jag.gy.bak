@@ -6,9 +6,9 @@
         <li class="[ mr-6 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
-      <h1 class="p-entry__title [ text-7xl ]">{{ title }}</h1>
+      <h1 class="p-entry__title [ text-4xl md:text-7xl ]">{{ $page.title }}</h1>
 
-      <p class="[ text-gray text-sm mt-6 ]">Published {{ date.format('MMMM D, YYYY') }}</p>
+      <p class="[ text-gray text-sm mt-4 ]">Published {{ date.format('MMMM D, YYYY') }}</p>
     </div>
   </header>
 
@@ -26,14 +26,9 @@
 
 <script>
 import moment from 'moment'
-import widont from 'widont'
 
 export default {
   computed: {
-    title () {
-      return widont(this.$page.title)
-    },
-
     date () {
       return moment(this.$page.frontmatter.date)
     },

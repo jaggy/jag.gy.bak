@@ -6,6 +6,7 @@ module.exports = {
       yellow: '#fbD043',
       pink: '#ff0074',
       mint: '#3fffb8',
+      'mint-dark': '#33CC94',
       salmon: '#FF8480',
 
       primary: 'var(--color-primary)',
@@ -22,7 +23,7 @@ module.exports = {
 
     fontFamily: {
       heading: [
-        'poynter-oldstyle-display',
+        'poynter-oldstyle-text',
         'serif',
       ],
 

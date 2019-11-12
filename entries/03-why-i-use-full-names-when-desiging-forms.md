@@ -1,8 +1,9 @@
 ---
-title: Why I prefer “full name” in forms
+title: Why I use full names when designing forms
 date: 2019-11-11
-permalink: /why-i-prefer-full-name-in-forms
+permalink: /why-i-use-full-names-when-desiging-forms
 is_published: true
+description: Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
 ---
 
 Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
@@ -42,7 +43,7 @@ Let's hit off these points and see what the common responses I usually get.
 
 ### “What if we need to **search** by the last name?”                         {.hanging-punctuation}
 
-Jose, a part of my first name, is a also a familial name here. It's often argued that it saves a lot of time by splitting the names into fields so results won't be as much, or even have results from the first name.
+Jose, a part of my first name, is a also a family name here. It's often argued that it saves a lot of time by splitting the names into fields so results won't be as much, or even have results from the first name.
 
 While I do understand the sentiment, I think this should be more on improving the search implementation instead of immediately relying on splitting the name into different segments. For these cases, we can do sorting with relevancy. Maybe a left-to-right or right-to-left toggle?
 
