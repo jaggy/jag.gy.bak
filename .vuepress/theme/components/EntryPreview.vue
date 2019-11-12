@@ -3,7 +3,7 @@
     <header class="c-entry-preview__header">
       <div class="o-wrap o-wrap--large">
         <RouterLink :to="entry.path" class="[ text-black ]">
-          <h2 class="c-entry-preview__title [ text-4xl ]">{{ title }}</h2>
+          <h2 class="c-entry-preview__title [ text-6xl ]">{{ title }}</h2>
         </RouterLink>
 
         <p class="[ text-gray text-sm mt-4 ]">Published {{ date.format('MMMM D, YYYY') }}</p>

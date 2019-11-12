@@ -6,7 +6,7 @@
         <li class="[ mr-6 ]" v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
 
-      <h1 class="p-entry__title [ text-5xl ]">{{ title }}</h1>
+      <h1 class="p-entry__title [ text-7xl ]">{{ title }}</h1>
 
       <p class="[ text-gray text-sm mt-6 ]">Published {{ date.format('MMMM D, YYYY') }}</p>
     </div>

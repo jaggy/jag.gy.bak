@@ -1,5 +1,5 @@
 .o-wrap {
-  @apply max-w-lg mx-auto;
+  @apply max-w-2xl mx-auto;
 }
 
 .o-wrap--large {

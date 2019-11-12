@@ -4,19 +4,19 @@ html {
   --font-size: calc(100vw / 29);
 
   @screen md {
-    --font-size: calc(100vw / 41);
+    --font-size: calc(100vw / 40);
   }
 
   @screen lg {
-    --font-size: calc(100vw / 51);
+    --font-size: calc(100vw / 50);
   }
 
   @screen xl {
-    --font-size: calc(100vw / 61);
+    --font-size: calc(100vw / 60);
   }
 
   @screen 2xl {
-    --font-size: calc(100vw / 71);
+    --font-size: calc(100vw / 70);
   }
 
   font-size: var(--font-size);
@@ -29,10 +29,6 @@ html {
 
 .text-legible {
   text-rendering: optimizeLegibility;
-}
-
-a {
-  @apply text-primary;
 }
 
 h1, h2, h3, h4, h5, h6 {

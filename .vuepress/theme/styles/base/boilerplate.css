@@ -1,7 +1,3 @@
-:root {
-  --color-primary: theme('colors.pink');
-}
-
 .c-anchor {
     font-size: .85em;
     float: left;

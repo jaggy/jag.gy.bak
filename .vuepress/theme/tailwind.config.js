@@ -3,10 +3,13 @@ module.exports = {
     colors: {
       black: '#11101e',
       gray: '#888888',
-      yellow: '#ffde00',
+      yellow: '#fbD043',
       pink: '#ff0074',
+      mint: '#3fffb8',
+      salmon: '#FF8480',
 
       primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
     },
 
     screens: {
@@ -40,20 +43,26 @@ module.exports = {
     },
 
     fontSize: {
-      xs: '0.694em',
-      sm: '0.833em',
+      xs: '0.79em',
+      sm: '0.889em',
       base: '1em',
-      lg: '1.2em',
-      xl: '1.44em',
-      '2xl': '1.728em',
-      '3xl': '2.074em',
-      '4xl': '2.488em',
-      '5xl': '2.986em',
+      lg: '1.125em',
+      xl: '1.266em',
+      '2xl': '1.424em',
+      '3xl': '1.602em',
+      '4xl': '1.802em',
+      '5xl': '2.027em',
+      '6xl': '2.281em',
+      '7xl': '2.566em',
     },
 
     extend: {
       lineHeight: {
-        normal: '1.414',
+        normal: '1.58',
+      },
+
+      letterSpacing: {
+        normal: '-0.016em',
       },
     },
   },

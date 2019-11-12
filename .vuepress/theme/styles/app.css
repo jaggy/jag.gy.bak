@@ -5,6 +5,7 @@
 @import "vendor/ligconsolata";
 @import "vendor/prism";
 
+@import "base/variables";
 @import "base/boilerplate";
 @import "base/typography";
 

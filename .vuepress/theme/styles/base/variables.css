@@ -1,0 +1,5 @@
+:root {
+  --color-primary: theme('colors.mint');
+  --color-secondary: theme('colors.salmon');
+}
+
