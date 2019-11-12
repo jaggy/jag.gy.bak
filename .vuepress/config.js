@@ -21,6 +21,13 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#ffffff' }],
   ],
 
+  plugins: {
+    '@vuepress/pwa': {
+       serviceWorker: true,
+       updatePopup: true
+     }
+  },
+
   postcss: {
     plugins: [
       require('postcss-import'),

@@ -16,7 +16,7 @@ Whenever I sign up on services online, it always stands out whenever there are s
 
 Here in the Philippines, almost every form you'll run into will have a **first**, **middle**, and **last name**. Here's a visual breakdown of my own legal name since the terms for the names will differ from place to place.
 
-![Jose Andres Cruz Gauran](../assets/dist/03/full-name.png)
+![Jose Andres Cruz Gauran](../assets/dist/03/full-name.jpg)
 
 The **middle name** here is my mom's maiden last name. Some friends living in the US told me that there, without this distinction, my middle name would be **Andres** instead of **Cruz**.
 
