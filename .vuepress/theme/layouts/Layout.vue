@@ -39,9 +39,10 @@ export default {
 
 <style lang="postcss">
 .fade-enter-active, .fade-leave-active {
-  transition: transform 300ms, opacity 300ms ease-in-out;
+  transition: transform 350ms, opacity 350ms ease-in-out;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to {
   transform: translateY(-30px);
   opacity: 0;
 }

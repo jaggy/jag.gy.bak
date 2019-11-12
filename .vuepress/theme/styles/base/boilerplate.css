@@ -1,3 +1,7 @@
+body, #app, .l-app {
+  @apply min-h-screen;
+}
+
 .c-anchor {
   @apply text-secondary;
 
