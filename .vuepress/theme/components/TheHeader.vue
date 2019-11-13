@@ -13,10 +13,10 @@
     <nav class="[ ml-auto text-xs ]">
       <ul class="[ flex -mx-2 ]">
         <li class="[ mx-2 ]">
-          <a href="https://twitter.com/jaggygauran">Twitter</a>
+          <a href="https://twitter.com/jaggygauran" title="Twitter">Twitter</a>
         </li>
         <li class="[ mx-2 ]">
-          <a href="https://github.com/jaggy">Github</a>
+          <a href="https://github.com/jaggy" title="Github">Github</a>
         </li>
       </ul>
     </nav>
