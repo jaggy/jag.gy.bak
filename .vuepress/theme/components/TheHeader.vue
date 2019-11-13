@@ -2,12 +2,12 @@
 <header class="c-header">
   <div class="o-content-container--full [ flex items-center ]">
     <RouterLink to="/" class="[ text-black ]">
-      <h1 class="[ font-heading text-lg ]">
+      <Component :is="tag" class="[ font-heading text-lg font-bold tracking-tight leading-none ]">
         Jaggy Gauran
         <small class="[ block text-2xs font-normal mt-2 ]">
           I build stuff
         </small>
-      </h1>
+      </Component>
     </RouterLink>
 
     <nav class="[ ml-auto text-xs ]">
@@ -25,7 +25,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    tag() {
+      return this.$page.path === '/' ? 'p' : 'h1'
+    }
+  }
+}
 </script>
 
 <style lang="postcss">

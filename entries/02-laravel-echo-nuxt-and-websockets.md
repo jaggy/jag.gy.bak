@@ -3,6 +3,8 @@ title: Laravel Echo, Nuxt, and Websockets
 date: 2019-11-02 16:58:01
 permalink: /laravel-echo-nuxt-and-websockets
 is_published: false
+feed:
+  enable: false
 ---
 
 I've recently come across the [Laravel Websockets](https://docs.beyondco.de/laravel-websockets/) package. It's a Pusher replacement when it comes to web sockets.
