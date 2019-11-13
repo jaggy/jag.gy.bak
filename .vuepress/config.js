@@ -1,6 +1,12 @@
 const slugify = require('@vuepress/shared-utils/lib/slugify')
 const path = require('path')
 
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+  }
+}
+
 module.exports = {
   title: 'Jaggy Gauran',
   description: "I write about design, development, and any other thing that comes to mind.",
@@ -49,6 +55,30 @@ module.exports = {
       ),
       require('postcss-nested'),
       require('postcss-color-function'),
+      require('@fullhuman/postcss-purgecss')({
+        content: [
+          path.join(__dirname, 'theme', 'components', '*.vue'),
+          path.join(__dirname, 'theme', 'layouts', '*.vue'),
+          path.join(__dirname, 'theme', 'templates', '*.html'),
+        ],
+        whitelist: [
+          'html', 'body',
+        ],
+        whitelistPatternsChildren: [
+          /^o-rich-text$/,
+          /^language-/,
+          /^token/, /^pre/, /^code/
+        ],
+        whitelistPatterns: [
+          /^o-/, /^c-/, /^js-/,
+        ],
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            extensions: ["html", "vue"]
+          }
+        ]
+      })
     ]
   },
 
