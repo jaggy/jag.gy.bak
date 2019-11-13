@@ -15,6 +15,8 @@
     "@vuepress/plugin-pwa": "^1.0.0-rc.1",
     "postcss-color-function": "^4.1.0",
     "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.2"
+    "postcss-nested": "^4.1.2",
+    "vuepress-plugin-rss": "^2.0.0",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

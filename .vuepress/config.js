@@ -25,7 +25,17 @@ module.exports = {
     '@vuepress/pwa': {
        serviceWorker: true,
        updatePopup: true
-     }
+     },
+     'sitemap': {
+        hostname: 'https://jag.gy'
+     },
+
+     'vuepress-plugin-rss': {
+        base_url: '/',
+        site_url: 'https://jag.gy',
+        filter: (frontmatter) => { return frontmatter.is_published },
+        count: 20
+      }
   },
 
   postcss: {
