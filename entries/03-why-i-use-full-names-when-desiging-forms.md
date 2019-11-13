@@ -14,15 +14,15 @@ Whenever I sign up on services online, it always stands out whenever there are s
 
 ## Okay, let's set the scene
 
-Here in the Philippines, almost every form you'll run into will have a **first**, **middle**, and **last name**. Here's a visual breakdown of my own legal name since the terms for the names will differ from place to place.
+Here in the Philippines, almost every form you'll run into will have a **first**, **middle**, and **last name**. Here's a visual breakdown of my own legal name since the terms for the names will differ from place to place
 
-# ![Jose Andres Cruz Gauran](../assets/dist/03/full-name.jpg)
+![Jose Andres Cruz Gauran](../assets/dist/03/full-name.jpg)
 
 The **middle name** here is my mom's maiden last name. Some friends living in the US told me that there, without this distinction, my middle name would be **Andres** instead of **Cruz**.
 
 Here's a fun fact: ==plenty of organizations here use the mom's maiden name as a security question for customer verification and some even just ask for the middle name!==
 
-For more additional context, here are some stuff about the projects I've worked on just so you can compare and contrast with what you're working on.
+For more additional context, here are some stuff about the projects I've worked on so you can compare and contrast with what you're working on.
 
 1. We don't use the middle name or the mom's maiden name as a verification question.
 
@@ -63,9 +63,9 @@ This gets said more often than it should. Even when the client pulled rank and t
 
 ### “What if we wanted to be more personal by using their first name?” {.hanging-punctuation}
 
-I either just get the actual first part of the name, or add a nickname field in the user's profile. I personally don't really use my legal name. I use **Jaggy** publicly so reading emails that say my legal first name is pretty weird.
+I either get the first part of the name, or add a nickname field in the user's profile. I personally don't really use my legal name. I use **Jaggy** publicly so reading emails that say my legal first name is pretty weird.
 
-Although, maybe it's just me but a lot of people here have nicknames since culturally people here had really formal legal names... for some reason.. then use a shorter version of that name, some amalgamation, or something else. Whatever the case may be, just using the legal first name might not be as personable as people think it is.
+I think the same goes for a lot of people here. A lot of the people I know have a formal name that they don’t really use, or only use a portion of their “full name”. If that’s the case, then addressing someone with their full first name is still not as personable as people think it really is.
 
 ## Let's talk about accessibility
 
@@ -77,7 +77,7 @@ I have a friend from Indonesia who has a lot of problems with local forms here s
 
 ## Budget, Development, and Maintenance
 
-I've had conversations with people that point out that since the customer-base for foreigners are pretty small, there's no need to consider this 'cause, time, budget, for building and mainting is pretty costly than just splitting the field into two.
+I get some comments that if the user-base for the foreign customers is pretty small, it’s pretty fine to not support that specific format ‘cause of the time to implement a better search or something like that might increase the cost of development.
 
 While I do understand where that comes from, I really don't think that implementing either is time consuming or complex. In reality, if we're using raw SQL statments, we'll end up with something like this.
 
@@ -103,7 +103,7 @@ Customer::query()
   });
 ```
 
-> This is just me eyeballing the code so this might not really work. :sweat_smile:
+> This is me eyeballing the code so this might not really work. :sweat_smile:
 
 Which should sort the name based on the position of the keyword. In descending order? I'm not quite sure.
 
