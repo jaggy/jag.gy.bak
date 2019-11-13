@@ -1,9 +1,9 @@
 ---
 title: Why I use full names when designing forms
-date: 2019-11-11
 permalink: /why-i-use-full-names-when-desiging-forms
-is_published: true
+date: 2019-11-11 15:23:39
 description: Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
+is_published: true
 ---
 
 Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
@@ -16,7 +16,7 @@ Whenever I sign up on services online, it always stands out whenever there are s
 
 Here in the Philippines, almost every form you'll run into will have a **first**, **middle**, and **last name**. Here's a visual breakdown of my own legal name since the terms for the names will differ from place to place.
 
-![Jose Andres Cruz Gauran](../assets/dist/03/full-name.jpg)
+# ![Jose Andres Cruz Gauran](../assets/dist/03/full-name.jpg)
 
 The **middle name** here is my mom's maiden last name. Some friends living in the US told me that there, without this distinction, my middle name would be **Andres** instead of **Cruz**.
 

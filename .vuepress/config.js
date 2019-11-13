@@ -2,6 +2,9 @@ const slugify = require('@vuepress/shared-utils/lib/slugify')
 const path = require('path')
 
 module.exports = {
+  title: 'Jaggy Gauran - I build stuff',
+  description: "I write about design, development, and any other thing that comes to mind.",
+
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '60x60', href: '/apple-icon-60x60.png' }],
@@ -23,19 +26,19 @@ module.exports = {
 
   plugins: {
     '@vuepress/pwa': {
-       serviceWorker: true,
-       updatePopup: true
-     },
-     'sitemap': {
-        hostname: 'https://jag.gy'
-     },
+      serviceWorker: true,
+      updatePopup: true
+    },
 
-     'vuepress-plugin-rss': {
-        base_url: '/',
-        site_url: 'https://jag.gy',
-        filter: (frontmatter) => { return frontmatter.is_published },
-        count: 20
-      }
+    'sitemap': {
+      hostname: 'https://jag.gy'
+    },
+
+    'feed': {
+      canonical_base: 'https://jag.gy',
+      posts_directories: ['/entries/'],
+      sort: entries => entries.reverse()
+    }
   },
 
   postcss: {
