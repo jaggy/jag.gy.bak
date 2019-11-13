@@ -2,7 +2,7 @@ const slugify = require('@vuepress/shared-utils/lib/slugify')
 const path = require('path')
 
 module.exports = {
-  title: 'Jaggy Gauran - I build stuff',
+  title: 'Jaggy Gauran',
   description: "I write about design, development, and any other thing that comes to mind.",
 
   head: [
