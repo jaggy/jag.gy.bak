@@ -1,3 +1,4 @@
+const plugins = require('./plugins')
 const slugify = require('@vuepress/shared-utils/lib/slugify')
 const path = require('path')
 
@@ -8,8 +9,14 @@ class TailwindExtractor {
 }
 
 module.exports = {
+  plugins,
+
   title: 'Jaggy Gauran',
   description: "I write about design, development, and any other thing that comes to mind.",
+
+  themeConfig: {
+    author: '@jaggygauran',
+  },
 
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '57x57', href: '/apple-icon-57x57.png' }],
@@ -29,23 +36,6 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/ms-icon-150x150.png' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
   ],
-
-  plugins: {
-    '@vuepress/pwa': {
-      serviceWorker: true,
-      updatePopup: true
-    },
-
-    'sitemap': {
-      hostname: 'https://jag.gy'
-    },
-
-    'feed': {
-      canonical_base: 'https://jag.gy',
-      posts_directories: ['/entries/'],
-      sort: entries => entries.reverse()
-    }
-  },
 
   postcss: {
     plugins: [
