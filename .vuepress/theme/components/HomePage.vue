@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 import EntryPreview from './EntryPreview'
 
 export default {
@@ -19,7 +20,7 @@ export default {
       return this.$site.pages
         .filter(page => page.path !== '/')
         .filter(page => page.frontmatter.is_published)
-        .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+        .sort((a, b) => moment(b.frontmatter.date).format('YYYYMMDD') - moment(a.frontmatter.date).format('YYYYMMDD'))
     }
   }
 }

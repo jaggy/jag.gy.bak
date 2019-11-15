@@ -6,7 +6,7 @@ description: Whenever I sign up on services online, it always stands out wheneve
 is_published: true
 ---
 
-Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
+Whenever I sign up on services online, it always stands out when there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
 
 <!-- more -->
 
