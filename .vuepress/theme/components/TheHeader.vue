@@ -5,7 +5,7 @@
       <Component :is="tag" class="[ font-heading text-lg font-bold tracking-tight leading-none ]">
         Jaggy Gauran
         <small class="[ block text-2xs font-normal mt-2 ]">
-          I build stuff
+          I build stuff.
         </small>
       </Component>
     </RouterLink>
