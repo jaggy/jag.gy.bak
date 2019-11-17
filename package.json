@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vuepress build;",
-    "build": "cross-env NODE_ENV=production vuepress build;"
+    "dev": "cross-env NODE_ENV=development vuepress dev",
+    "build": "cross-env NODE_ENV=production vuepress build"
   },
   "dependencies": {
     "markdown-it-attrs": "^3.0.1",
