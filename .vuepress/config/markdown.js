@@ -1,7 +1,7 @@
 const slugify = require('@vuepress/shared-utils/lib/slugify')
 
 module.exports = {
-  slugify: (string) => slugify(string).replace(`“`, '').replace(`”`, '').replace(/\-$/, ''),
+  slugify: (string) => slugify(string).trimRight().replace(`“`, '').replace(`”`, ''),
 
   anchor: {
     permalinkClass: 'c-anchor',
