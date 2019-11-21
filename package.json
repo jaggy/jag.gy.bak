@@ -4,6 +4,7 @@
     "build": "cross-env NODE_ENV=production vuepress build"
   },
   "dependencies": {
+    "markdown-it-highlight-lines": "^1.0.2",
     "markdown-it-attrs": "^3.0.1",
     "markdown-it-mark": "^3.0.0",
     "moment": "^2.24.0",

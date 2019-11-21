@@ -11,5 +11,6 @@ module.exports = {
     // use more markdown-it plugins!
     md.use(require('markdown-it-attrs'))
     md.use(require('markdown-it-mark'))
+    md.use(require('markdown-it-highlight-lines'))
   }
 }

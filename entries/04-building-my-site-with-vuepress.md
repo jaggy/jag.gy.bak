@@ -1,10 +1,11 @@
 ---
+id: 4
 title: Building my site with Vuepress
 date: 2019-11-17 12:50:48
 is_published: true
 ---
 
-> Wow. I rework my site more than I write entries.
+> Wow. I rework my site more than I write actual content.
 
 I usually go for a CMS but `markdown-it`, the markdown parser Vuepress uses, has an extensive plugin gallery that solves a lot of what I need.
 
