@@ -2,8 +2,8 @@
 title: Building a CMS... and failing
 permalink: /building-a-cms-and-failing
 date: 2019-11-23 07:23:00
-description:
-is_published: false
+description: Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.
+is_published: true
 ---
 
 My first job in web development was building sites with Wordpress for a small studio here in the Philippines. Now, prior to this job, I already got *way* into open source, tooling, and bikeshedding. So for some reason, I got obsessed with building tools.
