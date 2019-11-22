@@ -1,6 +1,7 @@
 ---
 title: Building my site with Vuepress
 date: 2019-11-17 12:50:48
+permalink: /building-my-site-with-vuepress
 is_published: false
 ---
 
