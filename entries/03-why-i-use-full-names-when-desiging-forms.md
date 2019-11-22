@@ -1,7 +1,7 @@
 ---
 title: Why I use full names when designing forms
 permalink: /why-i-use-full-names-when-desiging-forms
-date: 2019-11-11 15:23:39
+date: 2019-11-11T15:23:39+08:00
 description: Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.
 is_published: true
 ---

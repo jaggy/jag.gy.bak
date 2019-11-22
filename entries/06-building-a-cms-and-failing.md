@@ -1,7 +1,7 @@
 ---
 title: Building a CMS... and failing
 permalink: /building-a-cms-and-failing
-date: 2019-11-23 01:01:00
+date: 2019-11-23T01:01:00+08:00
 description: Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.
 is_published: true
 ---

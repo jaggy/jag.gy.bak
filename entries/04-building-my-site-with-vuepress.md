@@ -1,6 +1,6 @@
 ---
 title: Building my site with Vuepress
-date: 2019-11-17 12:50:48
+date: 2019-11-17T12:50:48+08:00
 permalink: /building-my-site-with-vuepress
 is_published: false
 ---

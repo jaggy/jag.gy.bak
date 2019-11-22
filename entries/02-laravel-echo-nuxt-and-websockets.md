@@ -1,6 +1,6 @@
 ---
 title: Laravel Echo, Nuxt, and Websockets
-date: 2019-11-02 16:58:01
+date: 2019-11-02T16:58:01+08:00
 permalink: /laravel-echo-nuxt-and-websockets
 is_published: false
 feed:
