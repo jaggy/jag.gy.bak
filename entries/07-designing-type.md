@@ -152,4 +152,4 @@ On the PHP side I still prefer snake case for database-driven attributes.
 
 ## Let's do a hard stop here
 
-On the next one, we'll start working on the backend to figure out how to build out this package. :grimacing:
+I'm babbling, the post has lost its direction since I've been just dumping thoughts for the past three days. On the next one, we'll start working on the backend to figure out how to build out this package. :grimacing:
