@@ -13,6 +13,10 @@ Here's two javascript snippets I paste on the dev console so I can watch while w
 
 ==The safari one's the thing I just learned today!==
 
+
+
+<!-- MORE -->
+
 ### Safari
 
 ```js
