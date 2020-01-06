@@ -26,7 +26,7 @@ document.querySelector('video').webkitSetPresentationMode('picture-in-picture')
 ### Chrome
 
 ```js
-$('video').requestPictureInPicture()
+document.querySelector('video').requestPictureInPicture()
 ```
 
 
