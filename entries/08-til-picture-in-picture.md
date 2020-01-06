@@ -1,11 +1,11 @@
 ---
-title: TIL: Using javascript to activate PiP
-permalink: /til-using-javascript-to-activate-pip
+title: TIL Javascript and Picture-in-Picture
+permalink: /til-javascript-and-picture-in-picture
 date: 2020-01-07T02:56:00+08:00
 is_published: true
 ---
 
-
+ 
 
 In a lot of sites, you can right click (sometimes twice) to see the "Enter in Picture in Picture" option. There are some sites like Netflix or Twtich does some DOM magic to prevent that.
 
