@@ -1,0 +1,29 @@
+---
+title: TIL: Using javascript to activate PiP
+permalink: /til-using-javascript-to-activate-pip
+date: 2020-01-07T02:56:00+08:00
+is_published: true
+---
+
+
+
+In a lot of sites, you can right click (sometimes twice) to see the "Enter in Picture in Picture" option. There are some sites like Netflix or Twtich does some DOM magic to prevent that.
+
+Here's two javascript snippets I paste on the dev console so I can watch while working.
+
+==The safari one's the thing I just learned today!==
+
+### Safari
+
+```js
+document.querySelector('video').webkitSetPresentationMode('picture-in-picture')
+```
+
+### Chrome
+
+```js
+$('video').requestPictureInPicture()
+```
+
+
+
