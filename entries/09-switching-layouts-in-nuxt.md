@@ -2,10 +2,8 @@
 title: Switching Layouts in Nuxt
 permalink: /switching-layouts-in-nuxt
 date: 2020-01-07T22:30:00+08:00
-is_published: true
+is_published: true 
 ---
-
- 
 
 In Nuxt you can switch layouts in your pages by adding a `layout: 'layout-name'` property in your page attributes. With projects that have consistent design, only using layouts for well, layouts, this is fine but there can be caveats to this.
 
