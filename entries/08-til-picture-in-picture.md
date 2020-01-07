@@ -1,7 +1,7 @@
 ---
 title: TIL Javascript and Picture-in-Picture
 permalink: /til-javascript-and-picture-in-picture
-date: 2020-01-07T02:56:00+08:00
+date: 2020-01-06T02:56:00+08:00
 is_published: true
 ---
 
