@@ -11,7 +11,7 @@ Let's say when you log in, the user is redirected to a dashboard with a complete
 
 Here are two things I've seen people use to work around the issue.
 
-<!-- MORE -->
+<!-- more -->
 
 ## Scoped styles
 

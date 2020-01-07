@@ -15,7 +15,7 @@ Here's two javascript snippets I paste on the dev console so I can watch while w
 
 
 
-<!-- MORE -->
+<!-- more -->
 
 ### Safari
 
