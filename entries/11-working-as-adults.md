@@ -1,7 +1,7 @@
 ---
 title: Working as Adults
 permalink: /working-as-adults
-date: 2020-02=10T11:40:00+08:00
+date: 2020-02-10T11:40:00+08:00
 is_published: false 
 ---
 
