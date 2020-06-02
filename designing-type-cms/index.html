@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Designing Type CMS | Jaggy Gauran</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="https://jag.gy/rss.xml" title="Jaggy Gauran RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://jag.gy/feed.atom" title="Jaggy Gauran Atom Feed">
+    <link rel="alternate" type="application/json" href="https://jag.gy/feed.json" title="Jaggy Gauran JSON Feed">
+    <meta name="description" content="I write about design, development, and any other thing that comes to mind.">
+    <meta property="article:published_time" content="2019-12-02T06:18:00.000Z">
+    <meta property="og:site_name" content="Jaggy Gauran">
+    <meta property="og:title" content="Designing Type CMS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jag.gy/designing-type-cms/">
+    <meta name="twitter:title" content="Designing Type CMS">
+    <meta name="twitter:url" content="https://jag.gy/designing-type-cms/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.150f2fc1.css" as="style"><link rel="preload" href="/assets/js/app.6ce14dd3.js" as="script"><link rel="preload" href="/assets/js/3.4ae6469f.js" as="script"><link rel="preload" href="/assets/js/12.260c812e.js" as="script"><link rel="preload" href="/assets/js/4.d30e0a56.js" as="script"><link rel="prefetch" href="/assets/js/10.0b90a967.js"><link rel="prefetch" href="/assets/js/11.505c94c3.js"><link rel="prefetch" href="/assets/js/13.4889acc8.js"><link rel="prefetch" href="/assets/js/14.e34e01dc.js"><link rel="prefetch" href="/assets/js/15.003ab9ff.js"><link rel="prefetch" href="/assets/js/16.1b8989d8.js"><link rel="prefetch" href="/assets/js/17.8e23c5a2.js"><link rel="prefetch" href="/assets/js/18.e6e585ae.js"><link rel="prefetch" href="/assets/js/2.a5741bda.js"><link rel="prefetch" href="/assets/js/5.0b7e2f8f.js"><link rel="prefetch" href="/assets/js/6.105804c6.js"><link rel="prefetch" href="/assets/js/7.c1d624f1.js"><link rel="prefetch" href="/assets/js/8.4e5671ca.js"><link rel="prefetch" href="/assets/js/9.b5b3c43d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.150f2fc1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="l-app"><header class="c-header l-app__header"><div class="o-content-container--full [ flex items-center ]"><a href="/" class="[ text-black ] router-link-active"><h1 class="[ font-heading text-lg font-bold tracking-tight leading-none ]">
+        Jaggy Gauran
+        <small class="[ block text-2xs font-normal mt-2 ]">
+          I build stuff.
+        </small></h1></a> <nav class="[ ml-auto text-xs ]"><ul class="[ flex -mx-2 ]"><li class="[ mx-2 ]"><a href="https://twitter.com/jaggygauran" title="Twitter">Twitter</a></li> <li class="[ mx-2 ]"><a href="https://github.com/jaggy" title="Github">Github</a></li></ul></nav></div></header> <main class="l-app__content"><article class="p-entry"><header class="p-entry__header [ py-12 ]"><div class="o-content-container o-wrap o-wrap--large"><ul class="p-entry__tags [ mb-4 ]"></ul> <h1 class="p-entry__title [ text-4xl md:text-7xl ]">Designing Type CMS</h1> <p class="[ text-gray text-sm mt-4 ]">Published December 2, 2019</p></div></header> <div class="o-content-container o-wrap"><div class="p-entry__content o-rich-text content__default"><p>Now that we've started to yet again write another CMS, how do we go about it? In my case, whenever I write any product or package, I tend to start designing the ideal design and start adding in compromises depending on external factors (mostly my own technical knowhow).</p> <p>So, let's just jump into it and let's build this!</p> <h2 id="the-design"><a href="#the-design" class="c-anchor">#</a> The design</h2> <p>For Type, our main goal is the ability to work on the front-end without having to wait for any back-end work to have even started development.</p> <p>To make this work, we want to mainly work with JSON objects on the front-end, but we also want to make sure that Type works with a monolithic app since there are times that I really don't want two different packages for a single website.</p> <p>Okay, so since Type is a tool to build websites, let's start on the output we want first and work backwards from there.</p> <p>Let's remake the <a href="https://postmarkapp.com/" target="_blank" rel="noopener noreferrer">Postmark landing page<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> since I really like it.</p> <h3 id="statamic-and-prismic-contentful"><a href="#statamic-and-prismic-contentful" class="c-anchor">#</a> Statamic and Prismic/Contentful</h3> <p>Whenever I start working on some Statamic sites, I do the same thing, you can immediately start working with hard-coded data with variables extracted to frontmatter, then later move it out to the CMS. We'll take that, but use JSON.</p> <blockquote><p>I haven't looked into Statamic v3 yet, so if it's <em>extremely similiar</em>, sorry Jack, Jason, and Jesse. 😅</p></blockquote> <p>Moving on, for the headless side, I always like using dedicated components/partials for the blocks, and having to jigsaw something without the need for the backend sounds great.</p> <p>Imagine if we have some built wireframe components that we can just automagically switch with production data!</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Hero</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Customers</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Features</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Partners</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Testimonials</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Metrics</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Support</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Demo</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CallToAction</span> <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><p>or, if we want to loop through the blocks:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token operator">&lt;</span>Component 
+  <span class="token punctuation">:</span>is<span class="token operator">=</span><span class="token double-quoted-string string">&quot;block.type&quot;</span> 
+  v<span class="token operator">-</span>bind<span class="token operator">=</span><span class="token double-quoted-string string">&quot;block.data&quot;</span> 
+  v<span class="token operator">-</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token double-quoted-string string">&quot;block in page.blocks&quot;</span> 
+  <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment">// or with blade</span>
+
+@<span class="token function">each</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;blocks.<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$block</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">type</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">,</span> <span class="token variable">$blocks</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'block'</span><span class="token punctuation">)</span>
+</code></pre></div><p><a href="https://github.com/typecms/demo/tree/json-based-front-end" target="_blank" rel="noopener noreferrer">Here's a link to a partial build of the landing page.<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <hr> <div style="position:relative;padding-bottom:calc(56.25% + 44px);"><iframe src="https://gfycat.com/ifr/ShabbyNippyInvisiblerail" frameborder="0" scrolling="no" width="100%" height="100%" allowfullscreen="allowfullscreen" style="position:absolute;top:0;left:0;"></iframe></div><p><a href="https://gfycat.com/shabbynippyinvisiblerail">via Gfycat</a></p> <h2 id="updates"><a href="#updates" class="c-anchor">#</a> Updates</h2> <p>It's the next day and I have some thoughts after building out the front-end.</p> <h3 id="using-the-block-type-isn-t-as-good-as-i-thought"><a href="#using-the-block-type-isn-t-as-good-as-i-thought" class="c-anchor">#</a> Using the block type isn't as good as I thought</h3> <p>Using the block type.. not a good idea. Like the customer list, there might be specific designs for specific pages so it's better to base it off of the id instead.</p> <p>To be fair, we can use practically any data the api passes on.</p> <h3 id="how-about-block-variants"><a href="#how-about-block-variants" class="c-anchor">#</a> How about block variants?</h3> <p>For things like reversing bi-folds, and all that, I still think passing them off as data can still make it work.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">&quot;Bifold&quot;</span><span class="token punctuation">,</span>
+    data<span class="token operator">:</span> <span class="token punctuation">{</span>
+      image<span class="token operator">:</span> '...'<span class="token punctuation">,</span>
+      heading<span class="token operator">:</span> '...'<span class="token punctuation">,</span>
+      isReversed<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h3 id="using-camel-case-over-snake-case"><a href="#using-camel-case-over-snake-case" class="c-anchor">#</a> Using camel case over snake case</h3> <p>I started off using snake case for the API attributes since I'm pretty used to that but after building out the landing page, it got pretty annoying transforming the data just so the code style is consistent on the front-end.</p> <p>For now, I think I'll default to camel case, although, I think this can be manually set in userland, so it should not be a big problem later on. 🤔</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">asyncData</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> contactNumber <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>globals<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> contactNumber <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// over</span>
+
+<span class="token function">asyncData</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> contact_number<span class="token operator">:</span> contactNumber <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">.</span>globals<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> contactNumber <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>I guess there really are some ways to skirt around it but less code, less problems.</p> <p>On the PHP side I still prefer snake case for database-driven attributes.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token variable">$globals</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">contact_number</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">pretty</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre></div><hr> <h2 id="let-s-do-a-hard-stop-here"><a href="#let-s-do-a-hard-stop-here" class="c-anchor">#</a> Let's do a hard stop here</h2> <p>I'm babbling, the post has lost its direction since I've been just dumping thoughts for the past three days. On the next one, we'll start working on the backend to figure out how to build out this package. 😬</p></div></div></article></main> <footer class="c-footer l-app__footer [ mt-20 ]"><div class="o-content-container--full"><h4 class="[ text-lg font-script font-normal ]">🌊 Huzah! You made it down here!</h4></div></footer></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6ce14dd3.js" defer></script><script src="/assets/js/3.4ae6469f.js" defer></script><script src="/assets/js/12.260c812e.js" defer></script><script src="/assets/js/4.d30e0a56.js" defer></script>
+
+    <script src="https://use.typekit.net/jrk8lha.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Switching Layouts in Nuxt | Jaggy Gauran</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="https://jag.gy/rss.xml" title="Jaggy Gauran RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://jag.gy/feed.atom" title="Jaggy Gauran Atom Feed">
+    <link rel="alternate" type="application/json" href="https://jag.gy/feed.json" title="Jaggy Gauran JSON Feed">
+    <meta name="description" content="I write about design, development, and any other thing that comes to mind.">
+    <meta property="article:published_time" content="2020-01-07T14:30:00.000Z">
+    <meta property="og:site_name" content="Jaggy Gauran">
+    <meta property="og:title" content="Switching Layouts in Nuxt">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jag.gy/switching-layouts-in-nuxt/">
+    <meta name="twitter:title" content="Switching Layouts in Nuxt">
+    <meta name="twitter:url" content="https://jag.gy/switching-layouts-in-nuxt/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.150f2fc1.css" as="style"><link rel="preload" href="/assets/js/app.6ce14dd3.js" as="script"><link rel="preload" href="/assets/js/3.4ae6469f.js" as="script"><link rel="preload" href="/assets/js/14.e34e01dc.js" as="script"><link rel="preload" href="/assets/js/4.d30e0a56.js" as="script"><link rel="prefetch" href="/assets/js/10.0b90a967.js"><link rel="prefetch" href="/assets/js/11.505c94c3.js"><link rel="prefetch" href="/assets/js/12.260c812e.js"><link rel="prefetch" href="/assets/js/13.4889acc8.js"><link rel="prefetch" href="/assets/js/15.003ab9ff.js"><link rel="prefetch" href="/assets/js/16.1b8989d8.js"><link rel="prefetch" href="/assets/js/17.8e23c5a2.js"><link rel="prefetch" href="/assets/js/18.e6e585ae.js"><link rel="prefetch" href="/assets/js/2.a5741bda.js"><link rel="prefetch" href="/assets/js/5.0b7e2f8f.js"><link rel="prefetch" href="/assets/js/6.105804c6.js"><link rel="prefetch" href="/assets/js/7.c1d624f1.js"><link rel="prefetch" href="/assets/js/8.4e5671ca.js"><link rel="prefetch" href="/assets/js/9.b5b3c43d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.150f2fc1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="l-app"><header class="c-header l-app__header"><div class="o-content-container--full [ flex items-center ]"><a href="/" class="[ text-black ] router-link-active"><h1 class="[ font-heading text-lg font-bold tracking-tight leading-none ]">
+        Jaggy Gauran
+        <small class="[ block text-2xs font-normal mt-2 ]">
+          I build stuff.
+        </small></h1></a> <nav class="[ ml-auto text-xs ]"><ul class="[ flex -mx-2 ]"><li class="[ mx-2 ]"><a href="https://twitter.com/jaggygauran" title="Twitter">Twitter</a></li> <li class="[ mx-2 ]"><a href="https://github.com/jaggy" title="Github">Github</a></li></ul></nav></div></header> <main class="l-app__content"><article class="p-entry"><header class="p-entry__header [ py-12 ]"><div class="o-content-container o-wrap o-wrap--large"><ul class="p-entry__tags [ mb-4 ]"></ul> <h1 class="p-entry__title [ text-4xl md:text-7xl ]">Switching Layouts in Nuxt</h1> <p class="[ text-gray text-sm mt-4 ]">Published January 7, 2020</p></div></header> <div class="o-content-container o-wrap"><div class="p-entry__content o-rich-text content__default"><p>In Nuxt you can switch layouts in your pages by adding a <code>layout: 'layout-name'</code> property in your page attributes. With projects that have consistent design, only using layouts for well, layouts, this is fine but there can be caveats to this.</p> <p>Let's say when you log in, the user is redirected to a dashboard with a completely different design, Nuxt keeps the CSS of the <code>default.vue</code> layout and the CSS of the components used in the layout.</p> <p>Here are two things I've seen people use to work around the issue.</p> <h2 id="scoped-styles"><a href="#scoped-styles" class="c-anchor">#</a> Scoped styles</h2> <p>First up is using scoped styles. I haven't tried this one myself but in theory, if we add <code>&lt;style scoped&gt;</code>, the design should only be for that specific layout, and that specific components.</p> <p>I'm personally not a fan of this just because I still like CSS files</p> <h2 id="refreshing-the-layout"><a href="#refreshing-the-layout" class="c-anchor">#</a> Refreshing the layout</h2> <p>After some googling around, it seems that we have to make sure at build, the styles for the layout is split. So in our <code>nuxt.config.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  build <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    splitChunks<span class="token operator">:</span> <span class="token punctuation">{</span> 
+      layouts<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>This should solve issues when directly going to a page with a different layout, but when switching layouts at runtime (ie logging in from the site, then redirecting to an admin dashboard), Nuxt won't remove the CSS of the previous layout.</p> <p>This is a bit of a hack, but whenever we switch layouts that have massively different design components, we have to force a refresh to ensure that none of the previous styles bleed in.</p> <p>Here's a mixing that I use for layouts that need it:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">beforeCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>process<span class="token punctuation">.</span>server<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>__NUXT_LAYOUT__ <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>__NUXT_LAYOUT__ <span class="token operator">!==</span> <span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      window<span class="token punctuation">.</span>__NUXT_LAYOUT__ <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>To use it, include the mixin to your layout.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// default.vue</span>
+<span class="token keyword">import</span> RefreshStyles <span class="token keyword">from</span> <span class="token string">'~/mixins/RefreshStyles'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span>RefreshStyles<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://github.com/nuxt/nuxt.js/issues/3877#issuecomment-480202098" target="_blank" rel="noopener noreferrer">Here's the Github comment that helped me out!<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> People didn't really like it but it's the only thing that really worked for me on purging the old layout styles.</p></div></div></article></main> <footer class="c-footer l-app__footer [ mt-20 ]"><div class="o-content-container--full"><h4 class="[ text-lg font-script font-normal ]">🌊 Huzah! You made it down here!</h4></div></footer></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6ce14dd3.js" defer></script><script src="/assets/js/3.4ae6469f.js" defer></script><script src="/assets/js/14.e34e01dc.js" defer></script><script src="/assets/js/4.d30e0a56.js" defer></script>
+
+    <script src="https://use.typekit.net/jrk8lha.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Jaggy Gauran</title>
+        <link>https://jag.gy</link>
+        <description>I write about design, development, and any other thing that comes to mind.</description>
+        <lastBuildDate>Tue, 02 Jun 2020 03:51:59 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <atom:link href="https://jag.gy/feed.atom" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[TIL Javascript and Picture-in-Picture]]></title>
+            <link>https://jag.gy/til-javascript-and-picture-in-picture/</link>
+            <guid>https://jag.gy/til-javascript-and-picture-in-picture/</guid>
+            <pubDate>Sun, 05 Jan 2020 18:56:00 GMT</pubDate>
+            <description><![CDATA[In a lot of sites, you can right click (sometimes twice) to see the &quot;Enter in Picture in Picture&quot; option. There are some sites like Netflix or Twtich does some DOM magic to prevent that.
+Here's two javascript snippets I paste on the dev console so I can watch while working.
+The safari one's the thing I just learned today!]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Working as Adults]]></title>
+            <link>https://jag.gy/working-as-adults/</link>
+            <guid>https://jag.gy/working-as-adults/</guid>
+            <pubDate>Mon, 10 Feb 2020 03:40:00 GMT</pubDate>
+            <description><![CDATA[Last Friday, Sean started briefed me on a feature that we want to build in to a new product we're working on. Before even any development, or prototyping happened, I had a list of questions that are focused on the flow of the feature, who the users of the feature will be, and things realted to that aspect.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Switching Layouts in Nuxt]]></title>
+            <link>https://jag.gy/switching-layouts-in-nuxt/</link>
+            <guid>https://jag.gy/switching-layouts-in-nuxt/</guid>
+            <pubDate>Tue, 07 Jan 2020 14:30:00 GMT</pubDate>
+            <description><![CDATA[In Nuxt you can switch layouts in your pages by adding a layout: 'layout-name' property in your page attributes. With projects that have consistent design, only using layouts for well, layouts, this is fine but there can be caveats to this.
+Let's say when you log in, the user is redirected to a dashboard with a completely different design, Nuxt keeps the CSS of the default.vue layout and the CSS of the components used in the layout.
+Here are two things I've seen people use to work around the issue.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Designing Type CMS]]></title>
+            <link>https://jag.gy/designing-type-cms/</link>
+            <guid>https://jag.gy/designing-type-cms/</guid>
+            <pubDate>Mon, 02 Dec 2019 06:18:00 GMT</pubDate>
+            <description><![CDATA[Now that we've started to yet again write another CMS, how do we go about it? In my case, whenever I write any product or package, I tend to start designing the ideal design and start adding in compromises depending on external factors (mostly my own technical knowhow).
+So, let's just jump into it and let's build this!]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Artboards, Artboards, Artboards]]></title>
+            <link>https://jag.gy/artboards-artboards-arboards/</link>
+            <guid>https://jag.gy/artboards-artboards-arboards/</guid>
+            <pubDate>Wed, 15 Jan 2020 05:40:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Building a CMS... and failing]]></title>
+            <link>https://jag.gy/building-a-cms-and-failing/</link>
+            <guid>https://jag.gy/building-a-cms-and-failing/</guid>
+            <pubDate>Fri, 22 Nov 2019 17:01:00 GMT</pubDate>
+            <description><![CDATA[Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Writing More]]></title>
+            <link>https://jag.gy/writing-more/</link>
+            <guid>https://jag.gy/writing-more/</guid>
+            <pubDate>Fri, 22 Nov 2019 03:34:02 GMT</pubDate>
+            <description><![CDATA[My friend Martin just sent me two links a couple of minutes ago:
+
+2020.destroytoday.com
+Frank Chimero Redesign Blog: The Popeye Moment
+
+I want to do the same thing. It's not like anybody really keeps track of my writing, but like the fact that I can keep a public archive of the things I'm working on.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Why I use full names when designing forms]]></title>
+            <link>https://jag.gy/why-i-use-full-names-when-desiging-forms/</link>
+            <guid>https://jag.gy/why-i-use-full-names-when-desiging-forms/</guid>
+            <pubDate>Mon, 11 Nov 2019 07:23:39 GMT</pubDate>
+            <description><![CDATA[Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.]]></description>
+            <enclosure url="https://jag.gy/../assets/dist/03/full-name.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Building my site with Vuepress]]></title>
+            <link>https://jag.gy/building-my-site-with-vuepress/</link>
+            <guid>https://jag.gy/building-my-site-with-vuepress/</guid>
+            <pubDate>Sun, 17 Nov 2019 04:50:48 GMT</pubDate>
+            <description><![CDATA[
+Wow. I rework my site more than I write entries.
+
+I usually go for a CMS but markdown-it, the markdown parser Vuepress uses, has an extensive plugin gallery that solves a lot of what I need.
+Turns out, Vuepress is not just for building docs anymore!
+Here’s how I wrote the theme, plugins I am using, and the two ways I deploy my site, and the gotchas along the way.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Some Unique Title]]></title>
+            <link>https://jag.gy/some-unique-slug/</link>
+            <guid>https://jag.gy/some-unique-slug/</guid>
+            <pubDate>Wed, 15 Jan 2020 05:40:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

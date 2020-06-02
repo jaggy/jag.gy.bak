@@ -1,0 +1,78 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Jaggy Gauran",
+    "home_page_url": "https://jag.gy",
+    "feed_url": "https://jag.gy/feed.json",
+    "description": "I write about design, development, and any other thing that comes to mind.",
+    "items": [
+        {
+            "id": "https://jag.gy/til-javascript-and-picture-in-picture/",
+            "url": "https://jag.gy/til-javascript-and-picture-in-picture/",
+            "title": "TIL Javascript and Picture-in-Picture",
+            "summary": "In a lot of sites, you can right click (sometimes twice) to see the &quot;Enter in Picture in Picture&quot; option. There are some sites like Netflix or Twtich does some DOM magic to prevent that.\nHere's two javascript snippets I paste on the dev console so I can watch while working.\nThe safari one's the thing I just learned today!",
+            "date_modified": "2020-01-05T18:56:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/working-as-adults/",
+            "url": "https://jag.gy/working-as-adults/",
+            "title": "Working as Adults",
+            "summary": "Last Friday, Sean started briefed me on a feature that we want to build in to a new product we're working on. Before even any development, or prototyping happened, I had a list of questions that are focused on the flow of the feature, who the users of the feature will be, and things realted to that aspect.",
+            "date_modified": "2020-02-10T03:40:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/switching-layouts-in-nuxt/",
+            "url": "https://jag.gy/switching-layouts-in-nuxt/",
+            "title": "Switching Layouts in Nuxt",
+            "summary": "In Nuxt you can switch layouts in your pages by adding a layout: 'layout-name' property in your page attributes. With projects that have consistent design, only using layouts for well, layouts, this is fine but there can be caveats to this.\nLet's say when you log in, the user is redirected to a dashboard with a completely different design, Nuxt keeps the CSS of the default.vue layout and the CSS of the components used in the layout.\nHere are two things I've seen people use to work around the issue.",
+            "date_modified": "2020-01-07T14:30:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/designing-type-cms/",
+            "url": "https://jag.gy/designing-type-cms/",
+            "title": "Designing Type CMS",
+            "summary": "Now that we've started to yet again write another CMS, how do we go about it? In my case, whenever I write any product or package, I tend to start designing the ideal design and start adding in compromises depending on external factors (mostly my own technical knowhow).\nSo, let's just jump into it and let's build this!",
+            "date_modified": "2019-12-02T06:18:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/artboards-artboards-arboards/",
+            "url": "https://jag.gy/artboards-artboards-arboards/",
+            "title": "Artboards, Artboards, Artboards",
+            "date_modified": "2020-01-15T05:40:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/building-a-cms-and-failing/",
+            "url": "https://jag.gy/building-a-cms-and-failing/",
+            "title": "Building a CMS... and failing",
+            "summary": "Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.",
+            "date_modified": "2019-11-22T17:01:00.000Z"
+        },
+        {
+            "id": "https://jag.gy/writing-more/",
+            "url": "https://jag.gy/writing-more/",
+            "title": "Writing More",
+            "summary": "My friend Martin just sent me two links a couple of minutes ago:\n\n2020.destroytoday.com\nFrank Chimero Redesign Blog: The Popeye Moment\n\nI want to do the same thing. It's not like anybody really keeps track of my writing, but like the fact that I can keep a public archive of the things I'm working on.",
+            "date_modified": "2019-11-22T03:34:02.000Z"
+        },
+        {
+            "id": "https://jag.gy/why-i-use-full-names-when-desiging-forms/",
+            "url": "https://jag.gy/why-i-use-full-names-when-desiging-forms/",
+            "title": "Why I use full names when designing forms",
+            "summary": "Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.",
+            "image": "https://jag.gy/../assets/dist/03/full-name.jpg",
+            "date_modified": "2019-11-11T07:23:39.000Z"
+        },
+        {
+            "id": "https://jag.gy/building-my-site-with-vuepress/",
+            "url": "https://jag.gy/building-my-site-with-vuepress/",
+            "title": "Building my site with Vuepress",
+            "summary": "\nWow. I rework my site more than I write entries.\n\nI usually go for a CMS but markdown-it, the markdown parser Vuepress uses, has an extensive plugin gallery that solves a lot of what I need.\nTurns out, Vuepress is not just for building docs anymore!\nHere’s how I wrote the theme, plugins I am using, and the two ways I deploy my site, and the gotchas along the way.",
+            "date_modified": "2019-11-17T04:50:48.000Z"
+        },
+        {
+            "id": "https://jag.gy/some-unique-slug/",
+            "url": "https://jag.gy/some-unique-slug/",
+            "title": "Some Unique Title",
+            "date_modified": "2020-01-15T05:40:00.000Z"
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jag.gy</id>
+    <title>Jaggy Gauran</title>
+    <updated>2020-06-02T03:51:59.034Z</updated>
+    <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+    <link rel="alternate" href="https://jag.gy"/>
+    <link rel="self" href="https://jag.gy/feed.atom"/>
+    <subtitle>I write about design, development, and any other thing that comes to mind.</subtitle>
+    <entry>
+        <title type="html"><![CDATA[TIL Javascript and Picture-in-Picture]]></title>
+        <id>https://jag.gy/til-javascript-and-picture-in-picture/</id>
+        <link href="https://jag.gy/til-javascript-and-picture-in-picture/">
+        </link>
+        <updated>2020-01-05T18:56:00.000Z</updated>
+        <summary type="html"><![CDATA[In a lot of sites, you can right click (sometimes twice) to see the &quot;Enter in Picture in Picture&quot; option. There are some sites like Netflix or Twtich does some DOM magic to prevent that.
+Here's two javascript snippets I paste on the dev console so I can watch while working.
+The safari one's the thing I just learned today!]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Working as Adults]]></title>
+        <id>https://jag.gy/working-as-adults/</id>
+        <link href="https://jag.gy/working-as-adults/">
+        </link>
+        <updated>2020-02-10T03:40:00.000Z</updated>
+        <summary type="html"><![CDATA[Last Friday, Sean started briefed me on a feature that we want to build in to a new product we're working on. Before even any development, or prototyping happened, I had a list of questions that are focused on the flow of the feature, who the users of the feature will be, and things realted to that aspect.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Switching Layouts in Nuxt]]></title>
+        <id>https://jag.gy/switching-layouts-in-nuxt/</id>
+        <link href="https://jag.gy/switching-layouts-in-nuxt/">
+        </link>
+        <updated>2020-01-07T14:30:00.000Z</updated>
+        <summary type="html"><![CDATA[In Nuxt you can switch layouts in your pages by adding a layout: 'layout-name' property in your page attributes. With projects that have consistent design, only using layouts for well, layouts, this is fine but there can be caveats to this.
+Let's say when you log in, the user is redirected to a dashboard with a completely different design, Nuxt keeps the CSS of the default.vue layout and the CSS of the components used in the layout.
+Here are two things I've seen people use to work around the issue.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Designing Type CMS]]></title>
+        <id>https://jag.gy/designing-type-cms/</id>
+        <link href="https://jag.gy/designing-type-cms/">
+        </link>
+        <updated>2019-12-02T06:18:00.000Z</updated>
+        <summary type="html"><![CDATA[Now that we've started to yet again write another CMS, how do we go about it? In my case, whenever I write any product or package, I tend to start designing the ideal design and start adding in compromises depending on external factors (mostly my own technical knowhow).
+So, let's just jump into it and let's build this!]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Artboards, Artboards, Artboards]]></title>
+        <id>https://jag.gy/artboards-artboards-arboards/</id>
+        <link href="https://jag.gy/artboards-artboards-arboards/">
+        </link>
+        <updated>2020-01-15T05:40:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building a CMS... and failing]]></title>
+        <id>https://jag.gy/building-a-cms-and-failing/</id>
+        <link href="https://jag.gy/building-a-cms-and-failing/">
+        </link>
+        <updated>2019-11-22T17:01:00.000Z</updated>
+        <summary type="html"><![CDATA[Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Writing More]]></title>
+        <id>https://jag.gy/writing-more/</id>
+        <link href="https://jag.gy/writing-more/">
+        </link>
+        <updated>2019-11-22T03:34:02.000Z</updated>
+        <summary type="html"><![CDATA[My friend Martin just sent me two links a couple of minutes ago:
+
+2020.destroytoday.com
+Frank Chimero Redesign Blog: The Popeye Moment
+
+I want to do the same thing. It's not like anybody really keeps track of my writing, but like the fact that I can keep a public archive of the things I'm working on.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why I use full names when designing forms]]></title>
+        <id>https://jag.gy/why-i-use-full-names-when-desiging-forms/</id>
+        <link href="https://jag.gy/why-i-use-full-names-when-desiging-forms/">
+        </link>
+        <updated>2019-11-11T07:23:39.000Z</updated>
+        <summary type="html"><![CDATA[Whenever I sign up on services online, it always stands out whenever there are separate fields for the first and last name. With the projects I work on, I always use a single field for the name. When clients ask to split the name into multiple fields, it ends up in a pretty long discussion why I think it's unnecessary.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building my site with Vuepress]]></title>
+        <id>https://jag.gy/building-my-site-with-vuepress/</id>
+        <link href="https://jag.gy/building-my-site-with-vuepress/">
+        </link>
+        <updated>2019-11-17T04:50:48.000Z</updated>
+        <summary type="html"><![CDATA[
+Wow. I rework my site more than I write entries.
+
+I usually go for a CMS but markdown-it, the markdown parser Vuepress uses, has an extensive plugin gallery that solves a lot of what I need.
+Turns out, Vuepress is not just for building docs anymore!
+Here’s how I wrote the theme, plugins I am using, and the two ways I deploy my site, and the gotchas along the way.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Some Unique Title]]></title>
+        <id>https://jag.gy/some-unique-slug/</id>
+        <link href="https://jag.gy/some-unique-slug/">
+        </link>
+        <updated>2020-01-15T05:40:00.000Z</updated>
+    </entry>
+</feed>

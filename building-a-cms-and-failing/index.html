@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Building a CMS... and failing | Jaggy Gauran</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="https://jag.gy/rss.xml" title="Jaggy Gauran RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://jag.gy/feed.atom" title="Jaggy Gauran Atom Feed">
+    <link rel="alternate" type="application/json" href="https://jag.gy/feed.json" title="Jaggy Gauran JSON Feed">
+    <meta name="description" content="Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.">
+    <meta property="article:published_time" content="2019-11-22T17:01:00.000Z">
+    <meta property="og:site_name" content="Jaggy Gauran">
+    <meta property="og:title" content="Building a CMS... and failing">
+    <meta property="og:description" content="Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jag.gy/building-a-cms-and-failing/">
+    <meta name="twitter:title" content="Building a CMS... and failing">
+    <meta name="twitter:description" content="Here’s a stupid story of me trying to build yet another CMS, why I’m building it, and what I have so far.">
+    <meta name="twitter:url" content="https://jag.gy/building-a-cms-and-failing/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.150f2fc1.css" as="style"><link rel="preload" href="/assets/js/app.6ce14dd3.js" as="script"><link rel="preload" href="/assets/js/3.4ae6469f.js" as="script"><link rel="preload" href="/assets/js/11.505c94c3.js" as="script"><link rel="preload" href="/assets/js/4.d30e0a56.js" as="script"><link rel="prefetch" href="/assets/js/10.0b90a967.js"><link rel="prefetch" href="/assets/js/12.260c812e.js"><link rel="prefetch" href="/assets/js/13.4889acc8.js"><link rel="prefetch" href="/assets/js/14.e34e01dc.js"><link rel="prefetch" href="/assets/js/15.003ab9ff.js"><link rel="prefetch" href="/assets/js/16.1b8989d8.js"><link rel="prefetch" href="/assets/js/17.8e23c5a2.js"><link rel="prefetch" href="/assets/js/18.e6e585ae.js"><link rel="prefetch" href="/assets/js/2.a5741bda.js"><link rel="prefetch" href="/assets/js/5.0b7e2f8f.js"><link rel="prefetch" href="/assets/js/6.105804c6.js"><link rel="prefetch" href="/assets/js/7.c1d624f1.js"><link rel="prefetch" href="/assets/js/8.4e5671ca.js"><link rel="prefetch" href="/assets/js/9.b5b3c43d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.150f2fc1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="l-app"><header class="c-header l-app__header"><div class="o-content-container--full [ flex items-center ]"><a href="/" class="[ text-black ] router-link-active"><h1 class="[ font-heading text-lg font-bold tracking-tight leading-none ]">
+        Jaggy Gauran
+        <small class="[ block text-2xs font-normal mt-2 ]">
+          I build stuff.
+        </small></h1></a> <nav class="[ ml-auto text-xs ]"><ul class="[ flex -mx-2 ]"><li class="[ mx-2 ]"><a href="https://twitter.com/jaggygauran" title="Twitter">Twitter</a></li> <li class="[ mx-2 ]"><a href="https://github.com/jaggy" title="Github">Github</a></li></ul></nav></div></header> <main class="l-app__content"><article class="p-entry"><header class="p-entry__header [ py-12 ]"><div class="o-content-container o-wrap o-wrap--large"><ul class="p-entry__tags [ mb-4 ]"></ul> <h1 class="p-entry__title [ text-4xl md:text-7xl ]">Building a CMS... and failing</h1> <p class="[ text-gray text-sm mt-4 ]">Published November 23, 2019</p></div></header> <div class="o-content-container o-wrap"><div class="p-entry__content o-rich-text content__default"><p>My first job in web development was building sites with Wordpress for a small studio here in the Philippines. Now, prior to this job, I already got <em>way</em> into open source, tooling, and bikeshedding. So for some reason, I got obsessed with building tools.</p> <p>After using Wordpress, I was pretty unhappy with it. The purist little developer me hated everything about it. Using source control with it, syncing data from local to production, its plugin system, and a lot more. Now, one could argue that I just didn’t know how to build Wordpress themes properly, and <em><strong>they’d be right</strong></em>! But that’s not what I want to talk about. What I want to tell you is the story of building a CMS, and failing.</p> <p>These days, I maintain a couple of sites for long term clients and every now and then, I get this itch to just ditch the current CMS I’m using and build my own, fail, and keep using whatever I’m currently using for that project.</p> <p>The funny thing is, for those who don’t know, I worked on Statamic, a flat-file CMS, and I know it’s impossibly difficult to build a CMS but yeah, I’m having that need to build again so yeah, I’ll write about it!</p> <h2 id="building-type"><a href="#building-type" class="c-anchor">#</a> Building Type</h2> <p>I’m most likely gonna fail in building this CMS. Without a doubt, but to be honest, writing a CMS from scratch every now and then really does give me some perspective in tool building. So, let’s build <strong>Type</strong>.</p> <h3 id="we-already-have-a-spec"><a href="#we-already-have-a-spec" class="c-anchor">#</a> We already have a spec</h3> <p>Whenever I want to learn or get better, it’s better to build something that already exists since I don’t really need to ALSO think about a feature set that can make it “disruptive”. It’s more picking and choosing from the features of all the existing CMSes, and figuring out what I want, and how to implement it, which gives me a wider range on what part of development I can get better at.</p> <h3 id="i-already-have-sites-to-try-it-on"><a href="#i-already-have-sites-to-try-it-on" class="c-anchor">#</a> I already have sites to try it on</h3> <p>Since I’m already maintaining a couple of sites, I have access to their front-end assets, which means recreating a site with what I’m building at least gives me a way to compare and contrast the tool and the experience from the original CMS.</p> <h3 id="i-really-want-to-write-about-something"><a href="#i-really-want-to-write-about-something" class="c-anchor">#</a> I really want to write about something</h3> <p>Since I’m already writing on my site, what better way to practice my writing than to just write about the experience in building Type! I’m already writing a lot on Basecamp to show my peers what direction I’m onto, might as well just dump all of it publicly. 🤷‍♀</p> <h2 id="how-does-type-work"><a href="#how-does-type-work" class="c-anchor">#</a> How does Type work?</h2> <p>The initial feature set in my mind are:</p> <ul><li>Headless/API based.</li> <li>I want it to be a Laravel package. Pull it from composer and you can have a CMS without any conflict with your existing project.</li> <li>It’s database driven.</li> <li>Localization.</li> <li>Maybe “multi-tenant”? This one I’m a lot unsure of but handling multiple sites from a single dashboard could be nice.</li> <li>There’s a separate package for the front-end. People can make their own dashboard, but there’s a Nuxt project provided.</li> <li>I want to have extensions through composer. Pulling in a package just works.</li> <li>Schemas are defined by PHP objects, rather than JSON, YAML, or arrays.</li></ul> <p>I’m not sure how to implement some of these so let’s figure it out! Up next would be what we have so far, and open sourcing everything I have on Type right now. 🎉</p></div></div></article></main> <footer class="c-footer l-app__footer [ mt-20 ]"><div class="o-content-container--full"><h4 class="[ text-lg font-script font-normal ]">🌊 Huzah! You made it down here!</h4></div></footer></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6ce14dd3.js" defer></script><script src="/assets/js/3.4ae6469f.js" defer></script><script src="/assets/js/11.505c94c3.js" defer></script><script src="/assets/js/4.d30e0a56.js" defer></script>
+
+    <script src="https://use.typekit.net/jrk8lha.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>
